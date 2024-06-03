@@ -19,20 +19,14 @@ const Header = () => {
       <div className="flex items-center justify-between relative">
         <div className="mobile flex items-left justify-left md:hidden">
           {!isOpen && (
-            <button onClick={handleOpen}>
-              <HiOutlineMenuAlt4
-                aria-label="Mobile Menu Open"
-                className=" text-xl h-[28px] flex items-left justify-left"
-              />
+            <button aria-label="Mobile Menu Open" onClick={handleOpen}>
+              <HiOutlineMenuAlt4 className=" text-xl h-[28px] flex items-left justify-left" />
             </button>
           )}
 
           {isOpen && (
-            <button onClick={handleOpen}>
-              <TfiClose
-                aria-label="Mobile Menu Close"
-                className="text-xl h-[28px]"
-              />
+            <button aria-label="Mobile Menu Close" onClick={handleOpen}>
+              <TfiClose className="text-xl h-[28px]" />
             </button>
           )}
         </div>
@@ -41,7 +35,7 @@ const Header = () => {
           <Nav />
         </div>
 
-        <div className="text-2xl md:text-2xl font-bold uppercase flex items-center absolute top-2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="text-2xl md:text-2xl font-bold uppercase flex items-center absolute top-4 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           MYX
         </div>
       </div>
