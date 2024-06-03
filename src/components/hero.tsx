@@ -9,10 +9,10 @@ const Hero = () => {
       </p>
 
       <div className="flex  w-full items-center justify-center space-x-4 pt-4">
-        <button className="bg-black text-white border p-2 rounded px-4 hover:bg-white hover:text-black border-black">
+        <button className="bg-black text-white border p-2 rounded px-6 hover:bg-white hover:text-black border-black text-sm">
           CONTACT ME
         </button>
-        <button className="border border-black p-2 rounded px-4 hover:bg-black hover:text-white">
+        <button className="border border-black p-2 rounded px-6 hover:bg-black hover:text-white text-sm">
           PORTFOLIO
         </button>
       </div>

@@ -5,6 +5,7 @@ import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { TfiClose } from "react-icons/tfi";
 
 import MobileMenu from "@/components/menu/Mobile";
+import Nav from "@/components/menu/Nav";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,23 +15,29 @@ const Header = () => {
   };
 
   return (
-    <header className="flex flex-col  sticky top-0 z-10 p-2 border-b border-gray-300 bg-white bg-opacity-50 backdrop-blur">
-      <div className="flex items-center justify-between">
+    <header className="flex flex-col  sticky top-0 z-10 p-2 md:p-4 border-b border-gray-300 bg-white ">
+      <div className="flex items-center justify-between relative">
         <div className="mobile flex items-left justify-left md:hidden">
           {!isOpen && (
             <button onClick={handleOpen}>
-              <HiOutlineMenuAlt4 className="text-xl w-[50px] flex items-left justify-left" />
+              <HiOutlineMenuAlt4 className="menu-open text-xl h-[28px] flex items-left justify-left" />
             </button>
           )}
 
           {isOpen && (
             <button onClick={handleOpen}>
-              <TfiClose className="text-xl w-[50px]" />
+              <TfiClose className="menu-close text-xl h-[28px]" />
             </button>
           )}
         </div>
-        <div className="text-xl font-bold uppercase flex items-center">MYX</div>
-        <div className=" md:hidden w-[50px]"></div>
+
+        <div className="flex items-center justify-between hidden md:flex">
+          <Nav />
+        </div>
+
+        <div className="text-xl md:text-2xl font-bold uppercase flex items-center absolute top-2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          MYX
+        </div>
       </div>
       {isOpen && <MobileMenu />}
     </header>
