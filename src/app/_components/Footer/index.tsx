@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Logo2 } from "@/components/Logo";
+import Form from "../Form";
 
 const Footer = () => {
   return (
@@ -58,7 +59,9 @@ const Footer = () => {
           </nav>
         </section>
 
-        <div className="flex flex-col items-center gap-4 text-xs md:text-sm mt-4 w-full ">
+        <Form />
+
+        <div className="flex flex-col items-center gap-4 text-xs md:text-sm  w-full ">
           <p>&copy; 2024 We Build Websites Portugal. All rights reserved.</p>
         </div>
       </div>

@@ -14,3 +14,10 @@ export const contacts = createTable("contacts", {
   email: text("email").notNull(),
   message: text("message").notNull(),
 });
+
+export const mailList = createTable("mailList", {
+  id: uuid("id")
+    .primaryKey()
+    .default(sql`gen_random_uuid()`),
+  email: text("email").notNull(),
+});
