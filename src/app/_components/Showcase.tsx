@@ -3,7 +3,7 @@ import Card from "./Card";
 export default function Showcase() {
   return (
     <section>
-      <div className="flex flex-col md:flex-row gap-2 text-foreground p-6 py-4 pb-2 items-end justify-center max-w-6xl mx-auto">
+      <div className="flex flex-col md:flex-row gap-2 text-foreground p-6 py-4 pb-2 items-center md:items-end justify-center max-w-6xl mx-auto">
         <h2 className="text-xl text-foreground/90 font-semibold md:text-3xl">
           What do we do?
         </h2>
