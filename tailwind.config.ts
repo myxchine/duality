@@ -15,8 +15,8 @@ const config: Config = {
         sans: ["var(--font-geist-sans)"],
       },
       colors: {
-        foreground: "#fff",
-        background: "#000",
+        foreground: "#000",
+        background: "#fff",
         primary: "#000",
         secondary: "#fff",
         accent: "#808080",
