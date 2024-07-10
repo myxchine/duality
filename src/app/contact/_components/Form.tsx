@@ -12,7 +12,7 @@ export default function Form({
 
   return (
     <form
-      className="flex flex-col gap-4 max-w-6xl mx-auto py-8 w-full p-6 max-w-4xl xl:px-0"
+      className="flex flex-col gap-4  mx-auto py-8 w-full p-6 max-w-4xl xl:px-0"
       action={submit}
     >
       <Inputs searchParams={searchParams} />

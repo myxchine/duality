@@ -3,16 +3,16 @@ import Card from "./Card";
 export default function Showcase() {
   return (
     <section>
-      <div className="flex flex-col md:flex-row gap-2 text-foreground p-6 py-4 pb-2 items-center justify-center">
-        <h2 className="text-xl text-foreground/90 font-semibold">
+      <div className="flex flex-col md:flex-row gap-2 text-foreground p-6 py-4 pb-2 items-end justify-center max-w-6xl mx-auto">
+        <h2 className="text-xl text-foreground/90 font-semibold md:text-3xl">
           What do we do?
         </h2>
-        <p className="text-sm text-foreground/60">
+        <p className="text-sm text-foreground/60 md:text-xl">
           Every web solution is unique to you.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 max-w-6xl mx-auto">
         <Card
           title="Web Development"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. ."
