@@ -5,11 +5,11 @@ import Form from "../Form";
 const Footer = () => {
   return (
     <footer className="flex flex-col items-center justify-center w-full py-8 border-t border-foreground/10 pt-14 pb-6 md:py-20 md:pb-6 mt-8 md:mt-12 text-foreground">
-      <div className="flex flex-col items-start justify-between gap-12 w-full max-w-6xl px-6 md:gap-16">
+      <div className="flex flex-col items-start justify-start gap-12 w-full max-w-6xl px-6 md:gap-16">
         <div className="flex flex-col gap-4  md:gap-6">
           <Logo2 />
-          <p className="text-xs  text-foreground/60 text-left md:text-md max-w-5xl w-full">
-            Discover the power of custom wev develpment to unlock your full
+          <p className="text-sm  text-foreground/60 text-left md:text-md max-w-sm w-full">
+            Discover the power of custom web develpment to unlock your full
             potential.
           </p>
         </div>

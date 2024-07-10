@@ -7,11 +7,15 @@ export default function Form() {
 
   return (
     <form
-      className="flex flex-col gap-4 max-w-6xl mx-auto  w-full  max-w-4xl xl:px-0"
+      className="flex flex-col gap-4  w-full  max-w-md xl:px-0"
       action={submit}
     >
       {status && <p>Submitted successfully!</p>}
       {!status && <p>Subscribe to our newsletter</p>}
+
+      <p className="text-sm text-foreground/60">
+        Access exclusive offers and information from WBW.
+      </p>
 
       <div className="flex flex-row w-full gap-2">
         <Inputs />

@@ -1,7 +1,8 @@
 export function Logo() {
   return (
-    <div className="text-foreground font-bold text-3xl md:text-4xl tracking-tighter">
-      WeBuild<span className="text-foreground">Websites</span>
+    <div className="text-foreground font-bold text-2xl md:text-4xl tracking-tighter">
+      WeBuildWebsites
+      <span className="text-foreground/60 font-semibold"> / PT</span>
     </div>
   );
 }

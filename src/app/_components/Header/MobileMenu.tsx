@@ -20,7 +20,7 @@ export default function MobileMenu() {
             onClick={() => setIsOpen(true)}
             className="flex items-center justify-center "
           >
-            <MenuIcon className="  h-6 w-6 " stroke="white" />
+            <MenuIcon className="  h-8 w-8 " stroke="white" />
           </button>
         </section>
       )}
@@ -39,7 +39,7 @@ export default function MobileMenu() {
                 className="flex items-center justify-center "
                 onClick={() => setIsOpen(false)}
               >
-                <CloseIcon stroke="white" className="  h-6 w-6" />
+                <CloseIcon stroke="white" className="  h-8 w-8" />
               </button>
             </div>
           </div>
