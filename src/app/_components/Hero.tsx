@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section className="text-foreground py-12 flex flex-col items-center justify-center gap-6 p-6 md:gap-8">
@@ -17,12 +19,16 @@ export default function Hero() {
       </div>
 
       <div className="flex flex-row items-center justify-center gap-4  w-full max-w-md mx-auto">
-        <button className="px-4 py-2 w-full border rounded bg-foreground text-background hover:bg-background hover:text-foreground border-foreground md:text-lg">
-          Calculate Now
-        </button>
-        <button className="px-4 py-2 w-full border rounded border-foreground/20 hover:border-foreground hover:text-foreground md:text-lg">
-          Explore
-        </button>
+        <Link href="/calculate" className="w-full">
+          <button className="px-4 py-2 w-full border rounded bg-foreground text-background hover:bg-background hover:text-foreground border-foreground md:text-lg">
+            Calculate Now
+          </button>
+        </Link>
+        <Link href="/portfolio" className="w-full">
+          <button className="px-4 py-2 w-full border rounded border-foreground/20 hover:border-foreground hover:text-foreground md:text-lg">
+            Explore
+          </button>
+        </Link>
       </div>
     </section>
   );

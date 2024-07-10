@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Nav from "./Nav";
 import { MenuIcon, CloseIcon } from "@/components/icons";
-import Logo from "./Logo";
+import { Logo } from "@/components/Logo";
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +20,7 @@ export default function MobileMenu() {
             onClick={() => setIsOpen(true)}
             className="flex items-center justify-center "
           >
-            <MenuIcon className="  h-6 w-6 " stroke="black" />
+            <MenuIcon className="  h-6 w-6 " stroke="white" />
           </button>
         </section>
       )}
@@ -39,7 +39,7 @@ export default function MobileMenu() {
                 className="flex items-center justify-center "
                 onClick={() => setIsOpen(false)}
               >
-                <CloseIcon stroke="black" className="  h-6 w-6" />
+                <CloseIcon stroke="white" className="  h-6 w-6" />
               </button>
             </div>
           </div>

@@ -1,0 +1,46 @@
+export const Pricing = {
+  websiteTypes: {
+    basic: 500,
+    business: 1000,
+    eCommerce: 1500,
+    blog: 800,
+    portfolio: 700,
+    custom: 2000,
+  },
+  pages: {
+    home: 100,
+    about: 50,
+    services: 75,
+    contact: 50,
+    blog: 30,
+    portfolio: 60,
+    product: 50,
+    custom: 100,
+  },
+  designComplexity: {
+    basic: 300,
+    standard: 600,
+    premium: 1000,
+  },
+  features: {
+    responsiveDesign: 200,
+    seoOptimization: 150,
+    cmsIntegration: 400,
+    eCommerceFunctionality: 500,
+    blogIntegration: 200,
+    contactForm: 50,
+    socialMediaIntegration: 100,
+    customFeature: 300,
+  },
+  hosting: {
+    basic: 100,
+    standard: 200,
+    premium: 400,
+  },
+  maintenance: {
+    none: 0,
+    basic: 50,
+    standard: 100,
+    premium: 200,
+  },
+};
