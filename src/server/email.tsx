@@ -50,6 +50,8 @@ export default async function sendBookingConfirmationEmail(
       return false;
     }
 
+    console.log("Email sent successfully");
+
     return true;
   } catch (error) {
     throw new Error(`Failed to send email: ${error}`);
