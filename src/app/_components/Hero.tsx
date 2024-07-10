@@ -16,7 +16,7 @@ export default function Hero() {
         </h1>
         <div className="flex flex-col gap-4 border-x border-foreground/20 border-dashed p-4 mt-[2px] w-full max-w-3xl ">
           <p className="text-center text-sm text-foreground/60 md:text-xl leading-loose max-w-2xl text-balance   ">
-            Create quality, fast and full customs web sites to your wildest
+            We curate fully custom, quality and fast web sites to your wildest
             imagination.
           </p>
 
