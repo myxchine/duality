@@ -13,8 +13,6 @@ interface EmailData {
   htmlContent: string;
 }
 
-const API_KEY: string = process.env.EMAIL_KEY || "";
-
 export default async function sendBookingConfirmationEmail(
   customerName: string,
   customerSurname: string,
@@ -41,7 +39,7 @@ export default async function sendBookingConfirmationEmail(
       method: "POST",
       headers: {
         accept: "application/json",
-        "api-key": API_KEY,
+        "api-key": process.env.EMAIL_KEY!,
         "content-type": "application/json",
       },
       body: JSON.stringify(confirmationEmailData),

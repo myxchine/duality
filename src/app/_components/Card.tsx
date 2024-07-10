@@ -20,6 +20,7 @@ export default function Card({
           src={image}
           alt="Card Image"
           width={200}
+          priority={true}
           height={100}
           className="rounded-md w-full h-[200px] object-cover"
         />
