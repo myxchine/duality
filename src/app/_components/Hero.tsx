@@ -8,8 +8,8 @@ export default function Hero() {
           We only know how to{" "}
           <span className="text-foreground">Build Websites</span>
         </p>
-        <h1 className="text-5xl text-center md:text-3xl max-w-3xl font-bold leading-tight  md:text-8xl tracking-tighter">
-          But we are **** good at it
+        <h1 className="text-6xl text-center  max-w-3xl font-bold leading-tight  md:text-8xl tracking-tighter">
+          But we are *** good at it
         </h1>
 
         <p className="text-center text-sm text-foreground/60 md:text-xl leading-loose max-w-2xl text-balance   ">
