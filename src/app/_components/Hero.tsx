@@ -26,7 +26,7 @@ export default function Hero() {
                 Contact
               </button>
             </Link>
-            <Link href="/portfolio" className="w-full">
+            <Link href="/#portfolio" className="w-full">
               <button className="px-4 py-2 w-full border rounded border-foreground/20 hover:border-foreground hover:text-foreground md:text-lg">
                 Explore
               </button>

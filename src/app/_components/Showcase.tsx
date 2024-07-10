@@ -14,25 +14,25 @@ export default function Showcase() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 max-w-6xl mx-auto">
         <Card
-          title="Web Development"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. ."
+          title="Structure & Design"
+          description="We start from the ground up to create a beautiful and functional website that suits your needs."
           image="/images/placeholder.svg"
-          linkRef="/web-development"
-          link="Web Development"
+          linkRef="/#web-development"
+          link="More "
         />
         <Card
-          title="Web Design"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. ."
+          title="Development"
+          description="We can then develop the website using the latest technologies and frameworks to make it FAST and work great."
           image="/images/placeholder.svg"
-          linkRef="/web-design"
-          link="Web Design"
+          linkRef="/#web-design"
+          link="More"
         />
         <Card
-          title="Web Architecture"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. ."
+          title="Hosting & Maintenance"
+          description="Once the website is ready, we can host it on a reliable and secure server to ensure it stays up and running smoothly."
           image="/images/placeholder.svg"
-          linkRef="/web-architecture"
-          link="Web Architecture"
+          linkRef="/#web-architecture"
+          link="More"
         />
       </div>
     </section>

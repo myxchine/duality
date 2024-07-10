@@ -32,7 +32,7 @@ export default function Card({
         href={linkRef}
         className="text-sm text-foreground/90 hover:underline"
       >
-        {link} {"->"}
+        {link} {" ->"}
       </Link>
     </section>
   );
