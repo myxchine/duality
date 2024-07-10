@@ -24,15 +24,15 @@ export default function Nav(props: any) {
         Portfolio
       </Link>
 
-      <Link href={"/calculate"}>
+      <Link href={"/contact"}>
         <button
           className={`text-background w-fit p-2 px-4 rounded border border-foreground hover:bg-background hover:text-foreground hover:border-foreground ${
-            pathname === "/calculate"
+            pathname === "/contact"
               ? "bg-foreground text-background border-foreground"
               : "bg-foreground text-background border-foreground"
           }`}
         >
-          Calculate Now
+          Contact Now
         </button>
       </Link>
     </nav>

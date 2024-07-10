@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="text-foreground py-8 flex flex-col items-center justify-center gap-6 p-6 md:gap-8">
+    <section className="text-foreground py-8 flex flex-col items-center justify-center gap-6 p-6 md:gap-8 md:py-24">
       <div className="flex flex-col items-center justify-center  text-center w-full max-w-3xl ">
         <div className="flex flex-col gap-4 border-x border-foreground/20 border-dashed p-4 mb-[2px] w-full">
           <p className="text-sm text-center max-w-3xl text-balance text-foreground/60 md:text-xl">
@@ -11,7 +11,7 @@ export default function Hero() {
           </p>
         </div>
 
-        <h1 className="text-5xl text-center  max-w-3xl font-bold leading-tight font-bold  md:text-8xl tracking-tighter text-balance  border p-4 border-foreground/20 border-dashed">
+        <h1 className="text-5xl text-center w-full max-w-3xl font-bold leading-tight font-bold  md:text-8xl tracking-tighter text-balance  border p-4 border-foreground/20 border-dashed">
           But we are **** good at it
         </h1>
         <div className="flex flex-col gap-4 border-x border-foreground/20 border-dashed p-4 mt-[2px] w-full max-w-3xl ">
@@ -21,9 +21,9 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-row items-center justify-center gap-4  w-full max-w-md mx-auto ">
-            <Link href="/calculate" className="w-full">
+            <Link href="/contact" className="w-full">
               <button className="px-4 py-2 w-full border rounded bg-foreground text-background hover:bg-background hover:text-foreground border-foreground md:text-lg">
-                Calculate Now
+                Contact Now
               </button>
             </Link>
             <Link href="/portfolio" className="w-full">
