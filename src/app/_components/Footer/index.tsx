@@ -14,8 +14,8 @@ const Footer = () => {
           </p>
         </div>
 
-        <section className="flex grid grid-cols-2 md:grid-cols-3 w-full gap-8 md:gap-12 md:flex-row ">
-          <nav className="flex flex-col items-start gap-4 text-sm w-full">
+        <section className="flex grid grid-cols-2 md:grid-cols-4 w-full gap-8 md:gap-12 md:flex-row ">
+          <nav className="flex flex-col items-start gap-4 text-sm w-full md:gap-8">
             <div className="text-base font-semibold">Main</div>
 
             <Link href="/" className="hover:underline text-foreground/60">
@@ -26,7 +26,7 @@ const Footer = () => {
             </Link>
           </nav>
 
-          <nav className="flex flex-col items-start gap-4 text-sm w-full">
+          <nav className="flex flex-col items-start gap-4 text-sm w-full md:gap-8">
             <div className="text-base font-semibold">Web Stuff</div>
             <Link
               href="/calculate"
@@ -42,7 +42,7 @@ const Footer = () => {
             </Link>
           </nav>
 
-          <nav className="flex flex-col items-start gap-4 text-sm w-full">
+          <nav className="flex flex-col items-start gap-4 text-sm w-full md:gap-8">
             <div className="text-base font-semibold">Explore</div>
             <Link
               href="/services"
@@ -57,11 +57,15 @@ const Footer = () => {
               Our Portfolio
             </Link>
           </nav>
+
+          <div className="hidden md:block">
+            <Form />
+          </div>
         </section>
-
-        <Form />
-
-        <div className="flex flex-col items-center gap-4 text-xs md:text-sm  w-full ">
+        <div className="block md:hidden mt-8">
+          <Form />
+        </div>
+        <div className="flex flex-col items-center gap-4 text-xs md:text-sm  w-full mt-4 md:mt-8">
           <p>&copy; 2024 We Build Websites Portugal. All rights reserved.</p>
         </div>
       </div>
