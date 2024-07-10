@@ -26,7 +26,7 @@ export default function MobileMenu() {
       )}
 
       {isOpen && (
-        <section className="h-screen bg-background w-screen fixed top-0 z-10 left-0 p-3 px-5 w-full flex flex-col text-foreground ">
+        <section className="h-screen bg-background w-screen fixed top-0 z-10 left-0 p-4 px-5 w-full flex flex-col text-foreground ">
           <div className="flex flex-row items-center justify-between w-full max-w-6xl mx-auto ">
             <Link href={"/"}>
               <div className="text-center text-white font-semibold text-3xl ">
@@ -44,7 +44,7 @@ export default function MobileMenu() {
             </div>
           </div>
           <div onClick={() => setIsOpen(false)}>
-            <Nav className="flex flex-col gap-4 py-12 items-center justify-center" />
+            <Nav className="flex flex-col gap-8 py-12 items-start justify-center" />
           </div>
         </section>
       )}

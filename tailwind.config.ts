@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "text-gradient": "linear-gradient(90deg, #fff, #FF0fff)",
+      },
       fontFamily: {
         sans: ["var(--font-geist-sans)"],
       },

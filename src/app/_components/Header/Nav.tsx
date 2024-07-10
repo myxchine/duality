@@ -32,7 +32,7 @@ export default function Nav(props: any) {
               : "bg-foreground text-background border-foreground"
           }`}
         >
-          Contact Now
+          Contact
         </button>
       </Link>
     </nav>

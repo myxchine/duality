@@ -1,8 +1,7 @@
 export function Logo() {
   return (
     <div className="text-foreground font-bold text-2xl md:text-4xl tracking-tighter">
-      WeBuildWebsites
-      <span className="text-foreground/60 font-semibold"> / PT</span>
+      WeBuild<span className="text-gradient text-[26px]">Websites</span>
     </div>
   );
 }
@@ -10,7 +9,7 @@ export function Logo() {
 export function Logo2() {
   return (
     <div className="text-foreground font-bold text-2xl md:text-4xl tracking-tighter">
-      WBW / Portugal
+      <span className="text-gradient text-[26px]">WBW</span> / Portugal
     </div>
   );
 }
