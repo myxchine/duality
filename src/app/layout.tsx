@@ -1,12 +1,9 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
+
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
-const inter = Inter({
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: {
@@ -20,7 +17,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   width: "device-width",
-  themeColor: "#000",
+  themeColor: "#fff",
 };
 
 export default function RootLayout({
@@ -29,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={GeistSans.variable}>
+      <body>
         <main>
           <Header />
           {children}

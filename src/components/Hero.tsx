@@ -1,21 +1,26 @@
 export default function Hero() {
   return (
-    <section className="flex flex-col  p-6 text-white py-12 pt-28 gap-6 max-w-4xl mx-auto md:py-24 md:pt-48 md:gap-10">
-      <div className="flex flex-col items-center justify-center gap-4 text-center w-full md:gap-6">
-        <h1 className="font text-5xl text-center font-bold md:text-7xl uppercase max-w-3xl">
-          We build Websites in Portugal
+    <section className="text-foreground py-12 flex flex-col items-center justify-center gap-6 p-6 md:gap-8">
+      <div className="flex flex-col items-center justify-center gap-4 text-center w-full md:gap-8">
+        <p className="text-sm text-center max-w-3xl text-balance text-foreground/60 md:text-xl">
+          We only know how to{" "}
+          <span className="text-foreground">Build Websites</span>
+        </p>
+        <h1 className="text-5xl text-center md:text-3xl max-w-3xl font-bold leading-tight  md:text-8xl tracking-tighter">
+          But we are **** good at it
         </h1>
-        <p className="   text-center text-sm text-white/60   md:text-xl  leading-loose max-w-2xl">
-          Create quality, speedy and fully featured sites customized to your
-          needs without limits or constraints.
+
+        <p className="text-center text-sm text-foreground/60 md:text-xl leading-loose max-w-2xl text-balance   ">
+          Create quality, fast and full customs web sites to your wildest
+          imagination.
         </p>
       </div>
 
-      <div className="flex flex-row items-center justify-center gap-4 px-2 w-full max-w-md mx-auto">
-        <button className="px-4 py-2 w-full border rounded bg-white text-black hover:bg-black hover:text-white border-white md:text-lg">
-          Free Quote
+      <div className="flex flex-row items-center justify-center gap-4  w-full max-w-md mx-auto">
+        <button className="px-4 py-2 w-full border rounded bg-foreground text-background hover:bg-background hover:text-foreground border-foreground md:text-lg">
+          Calculate Now
         </button>
-        <button className="px-4 py-2 w-full border rounded border-white/20 hover:border-white hover:text-white md:text-lg">
+        <button className="px-4 py-2 w-full border rounded border-foreground/20 hover:border-foreground hover:text-foreground md:text-lg">
           Explore
         </button>
       </div>

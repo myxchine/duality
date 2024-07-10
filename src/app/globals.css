@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: black;
+  @apply bg-background;
 }
 .full-screen {
   height: 100svh;

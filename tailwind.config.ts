@@ -9,12 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-inter)"],
-        wbw: ["var(--font-wbw)"],
+        sans: ["var(--font-geist-sans)"],
       },
       colors: {
-        accent: "#3D0B37", // Add your custom color hex code here
-        primary: "#e5ecf4",
+        foreground: "#000",
+        background: "#fff",
+        primary: "#000",
+        secondary: "#fff",
+        accent: "#3D0B37",
       },
     },
   },

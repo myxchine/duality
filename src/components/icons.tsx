@@ -6,8 +6,6 @@ export const MenuIcon = (props: any) => {
       fill="none"
       viewBox="0 0 24 24"
       strokeWidth={1}
-      stroke="white"
-      className="h-6 w-6"
     >
       <path
         strokeLinecap="round"
@@ -45,9 +43,7 @@ export const SearchIcon = (props: any) => {
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      stroke="currentColor"
-      className="size-6"
+      strokeWidth={1}
     >
       <path
         strokeLinecap="round"
@@ -65,9 +61,7 @@ export const MenuIcon2 = (props: any) => {
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
-      strokeWidth={1.5}
-      stroke="currentColor"
-      className="size-6"
+      strokeWidth={1}
     >
       <path
         strokeLinecap="round"
@@ -86,7 +80,6 @@ export const CloseIcon = (props: any) => {
       fill="none"
       viewBox="0 0 24 24"
       strokeWidth={1}
-      className="h-6 w-6 text-white"
     >
       <path
         strokeLinecap="round"
