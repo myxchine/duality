@@ -6,13 +6,13 @@ export default function Hero() {
       <div>
         <div className="flex flex-row  max-w-5xl mx-auto ">
           <div className="  w-16 ">
-            <div className=" md:h-[62px] h-[54px] " />
+            <div className=" md:h-[62px] h-[55px] " />
             <div className="h-[154px]  md:h-[226px] border-y border-dashed border-foreground/50" />
             <div className="h-[154px] md: h-[160px]" />
           </div>
           <Main />
           <div className="  w-16 ">
-            <div className=" md:h-[62px] h-[54px] " />
+            <div className=" md:h-[62px] h-[55px] " />
             <div className="h-[154px]  md:h-[226px] border-y border-dashed border-foreground/50" />
             <div className="h-[154px] md: h-[160px]" />
           </div>
