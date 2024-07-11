@@ -12,7 +12,7 @@ export default function MobileMenu() {
     <>
       {!isOpen && (
         <section className="flex flex-row items-center justify-between w-full md:max-w-6xl mx-auto">
-          <Link href={"/"}>
+          <Link href={"/"} className="w-fit flex flex-row items-start ">
             <Logo />
           </Link>
           <button

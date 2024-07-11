@@ -18,7 +18,7 @@ export default function Form() {
       {!status && <p className="font-bold">Subscribe to our newsletter</p>}
 
       <p className="text-sm text-foreground/60">
-        Access exclusive offers and information from WBW.
+        Access exclusive offers and information from us.
       </p>
 
       <div className="flex flex-row w-full gap-2">

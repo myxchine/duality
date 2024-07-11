@@ -66,7 +66,7 @@ const Footer = () => {
           <Form />
         </div>
         <div className="flex flex-col items-center gap-4 text-xs md:text-sm  w-full mt-4 md:mt-8">
-          <p>&copy; 2024 We Build Websites Portugal. All rights reserved.</p>
+          <p>&copy; 2024 Duality Web Agency Portugal. All rights reserved.</p>
         </div>
       </div>
     </footer>
