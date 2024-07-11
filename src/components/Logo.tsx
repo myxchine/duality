@@ -1,7 +1,6 @@
 export function Logo() {
   return (
     <div className="text-foreground font-bold text-xl md:text-2xl tracking-tighter flex flex-row gap-2 items-center">
-      <LogoIcon className="w-[30px] h-auto" />
       <span className=" mt-[2px] ">Michael Santos</span>
     </div>
   );
