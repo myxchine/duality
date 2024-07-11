@@ -22,18 +22,13 @@ const Footer = () => {
               Home
             </Link>
             <Link href="/about" className="hover:underline text-foreground/60">
-              About Us
+              About Me
             </Link>
           </nav>
 
           <nav className="flex flex-col items-start gap-4 text-sm w-full md:gap-8">
             <div className="text-base font-semibold">Web Stuff</div>
-            <Link
-              href="/calculate"
-              className="hover:underline text-foreground/60"
-            >
-              Calculate Price
-            </Link>
+
             <Link
               href="/contact"
               className="hover:underline text-foreground/60"
@@ -48,13 +43,13 @@ const Footer = () => {
               href="/services"
               className="hover:underline text-foreground/60"
             >
-              Our Services
+              My Services
             </Link>
             <Link
               href="/portfolio"
               className="hover:underline text-foreground/60"
             >
-              Our Portfolio
+              My Portfolio
             </Link>
           </nav>
 
@@ -66,7 +61,10 @@ const Footer = () => {
           <Form />
         </div>
         <div className="flex flex-col items-center gap-4 text-xs md:text-sm  w-full mt-4 md:mt-8">
-          <p>&copy; 2024 Duality Web Agency Portugal. All rights reserved.</p>
+          <p>
+            &copy; 2024 Michael Dos Santos Web Agency Portugal. All rights
+            reserved.
+          </p>
         </div>
       </div>
     </footer>

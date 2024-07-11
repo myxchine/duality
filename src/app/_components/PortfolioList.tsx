@@ -17,7 +17,7 @@ export default function PortfolioList({ data }: { data: any[] }) {
 
 function PortfolioCard({ portfolio }: { portfolio: any }) {
   return (
-    <div className="flex flex-col  w-full gap-8 md:flex-row p-6 bg-secondary rounded-md items-center md:p-8">
+    <div className="flex flex-col  w-full gap-8 md:flex-row p-6 bg-secondary rounded-2xl items-center md:p-8 shadow">
       <Image
         src={`/images/sites/${portfolio.desktopImage}`}
         alt={portfolio.title.toLowerCase().replaceAll(" ", "-")}
@@ -35,7 +35,7 @@ function PortfolioCard({ portfolio }: { portfolio: any }) {
           <p className="text-sm text-foreground/50">{portfolio.description}</p>
 
           <Link href={portfolio.url} className="w-fit mt-4">
-            <button className="px-8 border border-transparent py-2 w-full rounded-full bg-gradient text-background hover:bg-secondary hover:text-foreground hover:border-foreground/20 hover:bg-none">
+            <button className="px-8 border border-transparent py-2 w-full rounded-full bg-accent text-background hover:bg-secondary hover:text-foreground hover:border-foreground hover:bg-none">
               Visit Site
             </button>
           </Link>
