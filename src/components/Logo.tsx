@@ -1,7 +1,7 @@
 export function Logo() {
   return (
     <div className="text-foreground font-bold text-xl md:text-2xl tracking-tighter">
-      <span className="text-gradient uppercase ">Duality</span> / Portugal
+      <span className="text-gradient  ">Duality</span>Agency
     </div>
   );
 }

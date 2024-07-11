@@ -22,12 +22,12 @@ export default function Hero() {
 
           <div className="flex flex-row items-center justify-center gap-4  w-full max-w-md mx-auto ">
             <Link href="/contact" className="w-full">
-              <button className="px-4 py-2 w-full border rounded bg-foreground text-background hover:bg-background hover:text-foreground border-foreground md:text-lg">
+              <button className="px-4 py-2 w-full border rounded-full bg-foreground text-background hover:bg-background hover:text-foreground border-foreground md:text-lg">
                 Contact
               </button>
             </Link>
             <Link href="/#portfolio" className="w-full">
-              <button className="px-4 py-2 w-full border rounded border-foreground/20 hover:border-foreground hover:text-foreground md:text-lg">
+              <button className="px-4 py-2 w-full border rounded-full border-foreground/20 hover:border-foreground hover:text-foreground md:text-lg">
                 Explore
               </button>
             </Link>
