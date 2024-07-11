@@ -1,29 +1,20 @@
 export const sites = [
   {
     id: 1,
-    title: "TDS Enduro Bikes",
+    title: "TDS Enduro Bikes Algarve",
     description:
-      "Duality is a digital agency that specializes in building high-quality websites for clients in the creative industries. We are a team of experienced designers, developers, and project managers who are passionate about creating innovative and visually stunning websites that stand out on the web.",
-    image:
-      "https://res.cloudinary.com/duality/image/upload/v1686872525/duality/duality-logo.png",
-    url: "https://duality.agency",
+      "An off road motorcycle rental and guided tour company based in Algarve, Portugal.",
+    desktopImage: "tds/desktop.jpg",
+    mobileImage: "tds/mobile.jpg",
+    url: "https://tdsenduroalgarve.com",
   },
   {
     id: 2,
-    title: "Duality",
+    title: "New Private Jet",
     description:
-      "Duality is a digital agency that specializes in building high-quality websites for clients in the creative industries. We are a team of experienced designers, developers, and project managers who are passionate about creating innovative and visually stunning websites that stand out on the web.",
-    image:
-      "https://res.cloudinary.com/duality/image/upload/v1686872525/duality/duality-logo.png",
-    url: "https://duality.agency",
-  },
-  {
-    id: 3,
-    title: "Duality",
-    description:
-      "Duality is a digital agency that specializes in building high-quality websites for clients in the creative industries. We are a team of experienced designers, developers, and project managers who are passionate about creating innovative and visually stunning websites that stand out on the web.",
-    image:
-      "https://res.cloudinary.com/duality/image/upload/v1686872525/duality/duality-logo.png",
-    url: "https://duality.agency",
+      "New Private Jet is an international Private Jet specialist dealing with top tier clients for purchasing and information.",
+    desktopImage: "newprivatejet/desktop.jpg",
+    mobileImage: "newprivatejet/mobile.jpg",
+    url: "https://newprivatejet.vercel.app",
   },
 ];

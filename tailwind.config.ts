@@ -19,7 +19,7 @@ const config: Config = {
         background: "#F5F5F5",
         primary: "#000",
         secondary: "#fff",
-        accent: "#808080",
+        accent: "#5800b5",
         accent2: "#11677D",
       },
     },

@@ -19,7 +19,7 @@ export default function Form({
 
       <button
         type="submit"
-        className={`bg-foreground border border-foreground rounded-md text-background p-2 text-center h-12 px-4 w-full w-full   ${
+        className={`bg-foreground border border-foreground rounded-full text-background p-2 text-center h-12 px-4 w-full w-full   ${
           isPending ? "opacity-50 cursor-not-allowed" : ""
         }`}
         disabled={isPending}
@@ -92,7 +92,7 @@ function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
         type="text"
         name="name"
         placeholder="First Name"
-        className="flex-1 p-2 rounded-md border border-foreground/60 bg-background w-full text-foreground placeholder:text-foreground/60"
+        className="flex-1 p-2 px-4 rounded-full border border-foreground/20 bg-background w-full text-foreground placeholder:text-foreground/60"
         required
         value={formData.name}
         onBlur={(e) => updateParams("name", e.target.value)}
@@ -104,7 +104,7 @@ function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
         type="text"
         name="surname"
         placeholder="Surname"
-        className="flex-1 p-2 rounded-md border border-foreground/60 bg-background w-full text-foreground placeholder:text-foreground/60"
+        className="flex-1 p-2 px-4 rounded-full border border-foreground/20 bg-background w-full text-foreground placeholder:text-foreground/60"
         required
         value={formData.surname}
         onBlur={(e) => updateParams("surname", e.target.value)}
@@ -116,7 +116,7 @@ function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
         type="email"
         name="email"
         placeholder="Email"
-        className="flex-1 p-2 rounded-md border border-foreground/60 bg-background w-full text-foreground placeholder:text-foreground/60"
+        className="flex-1 p-2 rounded-full border border-foreground/20 px-4 bg-background w-full text-foreground placeholder:text-foreground/60"
         required
         value={formData.email}
         onBlur={(e) => updateParams("email", e.target.value)}
@@ -128,7 +128,7 @@ function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
         type="email"
         name="verifyEmail"
         placeholder="Verify email"
-        className="flex-1 p-2 rounded-md border border-foreground/60 bg-background w-full text-foreground placeholder:text-foreground/60"
+        className="flex-1 p-2 rounded-full border border-foreground/20 px-4 bg-background w-full text-foreground placeholder:text-foreground/60"
         required
         value={formData.verifyEmail}
         onChange={(e) => {
@@ -139,7 +139,7 @@ function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
       <textarea
         name="message"
         placeholder="Tell us about yourself and what you're looking for."
-        className=" p-2 rounded-md border border-foreground/60 bg-background w-full text-foreground h-[150px] w-full placeholder:text-foreground/60"
+        className=" p-2 rounded-xl border border-foreground/20 px-4 bg-background w-full text-foreground h-[150px] w-full placeholder:text-foreground/60"
         required
         value={formData.message}
         onBlur={(e) => updateParams("message", e.target.value)}

@@ -7,8 +7,8 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: {
-    default: " We Build Websites Portugal",
-    template: "%s | We Build Websites Portugal",
+    default: " We Build Websites Portugal | Duality Agency",
+    template: "%s | We Build Websites Portugal | Duality Agency",
   },
   description:
     "We build websites for clients and for ourselves. We are a team of creatives and developers who love to build websites. We love to work with clients to create websites that are beautiful, functional, and easy to use. We also love to work on our own projects and to learn new things.",
