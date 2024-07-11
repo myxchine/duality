@@ -1,6 +1,5 @@
 export const sites = [
   {
-    id: 1,
     title: "TDS Enduro Bikes Algarve",
     description:
       "An off road motorcycle rental and guided tour company based in Algarve, Portugal.",
@@ -9,7 +8,23 @@ export const sites = [
     url: "https://tdsenduroalgarve.com",
   },
   {
-    id: 2,
+    title: "Fazenda Nova Boutique Hotel",
+    description:
+      "Fazenda Nova is a luxurious establishment located in the Algarve region of Portugal. It offers a wide range of services, including event planning, wedding planning, and catering services.",
+    desktopImage: "fazenda/desktop.jpg",
+    mobileImage: "fazenda/mobile.jpg",
+    url: "https://fazendanova.eu",
+  },
+  {
+    title: "IAMTONGUE",
+    description:
+      "Tung is a Professional Photographer selling his preset packs. He creates content online, based in Algarve, Portugal.",
+    desktopImage: "tung/desktop.jpg",
+    mobileImage: "tung/mobile.jpg",
+    url: "https://iamtongue.com",
+  },
+
+  {
     title: "New Private Jet",
     description:
       "New Private Jet is an international Private Jet specialist dealing with top tier clients for purchasing and information.",

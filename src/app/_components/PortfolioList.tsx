@@ -5,7 +5,10 @@ export default function PortfolioList({ data }: { data: any[] }) {
     <div className="flex flex-col gap-4  w-full  max-w-6xl xl:px-0">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-1 ">
         {data.map((site) => (
-          <PortfolioCard key={site.id} portfolio={site} />
+          <PortfolioCard
+            key={site.title.toLowerCase().replaceAll(" ", "-")}
+            portfolio={site}
+          />
         ))}
       </div>
     </div>
