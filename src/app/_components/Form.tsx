@@ -26,7 +26,7 @@ export default function Form() {
 
         <button
           type="submit"
-          className={`bg-foreground border h-[40px]  border-foreground rounded-full text-background p-2 text-center h-12 px-4 w-fit text-sm  ${
+          className={`bg-foreground border h-[40px]  border-foreground rounded-full text-background p-2 text-center h-12 px-4 w-fit text-sm hover:bg-transparent hover:text-foreground ${
             isPending ? "opacity-50 cursor-not-allowed" : ""
           }`}
           disabled={isPending}

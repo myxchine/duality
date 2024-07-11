@@ -44,7 +44,7 @@ export default function MobileMenu() {
             </div>
           </div>
           <div onClick={() => setIsOpen(false)}>
-            <Nav className="flex flex-col gap-8 py-12 items-start justify-center" />
+            <Nav className="flex flex-col gap-8 py-12 items-center justify-center" />
           </div>
         </section>
       )}
