@@ -14,7 +14,7 @@ export default function Card({
   linkRef: string;
 }) {
   return (
-    <section className="flex flex-col  gap-6  w-full rounded-xl bg-background border border-foreground/20 p-4 text-foreground">
+    <section className="flex flex-col  gap-6  w-full rounded-xl bg-secondary  p-4 text-foreground">
       {image && (
         <Image
           src={image}
