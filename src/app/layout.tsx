@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next";
 import { GeistSans } from "geist/font/sans";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: {
@@ -24,14 +25,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={GeistSans.variable}>
-      <body>
-        <main>
-          <Header />
-          {children}
-          <Footer />
-        </main>
-      </body>
-    </html>
+    <>
+      <GoogleTagManager gtmId={"G-SC1YEJV0NY"} />
+
+      <html lang="en" className={GeistSans.variable}>
+        <body>
+          <main>
+            <Header />
+            {children}
+            <Footer />
+          </main>
+        </body>
+      </html>
+    </>
   );
 }
