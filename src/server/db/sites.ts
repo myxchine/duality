@@ -30,6 +30,6 @@ export const sites = [
       "New Private Jet is an international Private Jet specialist dealing with top tier clients for purchasing and information.",
     desktopImage: "newprivatejet/desktop.jpg",
     mobileImage: "newprivatejet/mobile.jpg",
-    url: "https://newprivatejet.vercel.app",
+    url: "https://jet.duality.agency",
   },
 ];
