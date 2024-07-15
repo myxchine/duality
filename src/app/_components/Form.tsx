@@ -26,7 +26,7 @@ export default function Form() {
 
         <button
           type="submit"
-          className={`bg-foreground border h-[40px]  border-foreground rounded-full text-background p-2 text-center h-12 px-4 w-fit text-sm hover:bg-transparent hover:text-foreground ${
+          className={`bg-foreground border h-[40px]  border-foreground rounded text-background p-2 text-center h-12 px-4 w-fit text-sm hover:bg-transparent hover:text-foreground ${
             isPending ? "opacity-50 cursor-not-allowed" : ""
           }`}
           disabled={isPending}
@@ -67,7 +67,7 @@ function Inputs() {
         type="email"
         name="email"
         placeholder="Email"
-        className="flex-1 p-3 h-[40px] rounded-full border border-foreground/60 bg-background w-full text-foreground placeholder:text-foreground/60 text-sm"
+        className="flex-1 p-3 h-[40px] rounded border border-foreground/60 bg-background w-full text-foreground placeholder:text-foreground/60 text-sm"
         required
         value={email}
         onChange={(e) => {

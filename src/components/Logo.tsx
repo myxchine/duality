@@ -1,7 +1,7 @@
 export function Logo() {
   return (
     <div className="text-foreground font-bold text-xl md:text-2xl tracking-tighter flex flex-row gap-2 items-center">
-      <span className=" mt-[2px] ">Michael Santos</span>
+      <span className=" mt-[2px] ">Michael Dos Santos</span>
     </div>
   );
 }
@@ -9,7 +9,7 @@ export function Logo() {
 export function Logo2() {
   return (
     <div className="text-foreground font-bold text-2xl md:text-4xl tracking-tighter">
-      I Build
+      Create Duality
       <span className="text-accent "> Websites</span>
     </div>
   );

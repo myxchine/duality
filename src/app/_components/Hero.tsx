@@ -6,13 +6,13 @@ export default function Hero() {
       <div>
         <div className="flex flex-row  max-w-5xl mx-auto ">
           <div className="  w-16 ">
-            <div className=" md:h-[62px] h-[56px] " />
+            <div className=" md:h-[62px] h-[58px] " />
             <div className="h-[154px]  md:h-[226px] border-y border-dashed border-foreground/50" />
             <div className="h-[154px] md: h-[160px]" />
           </div>
           <Main />
           <div className="  w-16 ">
-            <div className=" md:h-[62px] h-[56px] " />
+            <div className=" md:h-[62px] h-[58px] " />
             <div className="h-[154px]  md:h-[226px] border-y border-dashed border-foreground/50" />
             <div className="h-[154px] md: h-[160px]" />
           </div>
@@ -28,7 +28,7 @@ function Main() {
       <div className="flex flex-col gap-4 border-x border-foreground/50 border-dashed p-4 mb-[2px] w-full">
         <p className="text-sm text-center max-w-3xl text-balance text-foreground/60 md:text-xl">
           I only know how to{" "}
-          <span className="text-foreground">Build Websites</span>
+          <span className="text-foreground">Create Websites</span>
         </p>
       </div>
 
@@ -43,12 +43,12 @@ function Main() {
 
         <div className="flex flex-row items-center justify-center gap-4  w-full max-w-md mx-auto ">
           <Link href="/contact" className="w-full">
-            <button className="px-4 py-2 w-full border rounded-full bg-foreground text-background hover:bg-background hover:text-foreground border-foreground md:text-lg">
+            <button className="px-4 py-2 w-full border rounded bg-foreground text-background hover:bg-background hover:text-foreground border-foreground md:text-lg">
               Contact
             </button>
           </Link>
           <Link href="/portfolio" className="w-full">
-            <button className="px-4 py-2 w-full border rounded-full border-foreground/20 hover:border-foreground hover:text-foreground md:text-lg">
+            <button className="px-4 py-2 w-full border rounded border-foreground/20 hover:border-foreground hover:text-foreground md:text-lg">
               Portfolio
             </button>
           </Link>

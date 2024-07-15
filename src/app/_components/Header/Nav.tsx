@@ -26,7 +26,7 @@ export default function Nav(props: any) {
 
       <Link href={"/contact"}>
         <button
-          className={`text-background w-fit p-2 px-4 rounded-full border border-foreground hover:bg-background hover:text-foreground hover:border-foreground ${
+          className={`text-background w-fit p-2 px-4 rounded border border-foreground hover:bg-background hover:text-foreground hover:border-foreground ${
             pathname === "/contact"
               ? "bg-foreground text-background border-foreground"
               : "bg-foreground text-background border-foreground"
