@@ -23,7 +23,14 @@ export const sites = [
     mobileImage: "tung/mobile.jpg",
     url: "https://iamtongue.com",
   },
-
+  {
+    title: "Maja Kureczko",
+    description:
+      "Maja Kureczko is a polish Make up Artist and eyebrow specialist.",
+    desktopImage: "maja/desktop.JPG",
+    mobileImage: "tung/mobile.jpg",
+    url: "https://majakureczko.com",
+  },
   {
     title: "New Private Jet",
     description:
