@@ -53,7 +53,9 @@ const Footer = () => {
           <Form />
         </div>
         <div className="flex flex-col items-center gap-4 text-xs md:text-sm  w-full mt-4 md:mt-8 text-center">
-          <p>&copy; 2024 Create Duality Web Agency Portugal.</p>
+          <p className="text-balance ">
+            &copy; 2024 Michael Dos Santos Web Developer & Designer Portugal.
+          </p>
         </div>
       </div>
     </footer>

@@ -16,6 +16,14 @@ export const sites = [
     url: "https://fazendanova.eu",
   },
   {
+    title: "Enduro Wow",
+    description:
+      "A Global Hard Enduro Community for researchiing & purchasing bikes, gear, lessons and more.",
+    desktopImage: "wow/desktop.jpg",
+    mobileImage: "w0w/mobile.jpg",
+    url: "https://endurowow.com",
+  },
+  {
     title: "IAMTONGUE",
     description:
       "Tung is a Professional Photographer selling his preset packs. He creates content online, based in Algarve, Portugal.",

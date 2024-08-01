@@ -9,8 +9,7 @@ export function Logo() {
 export function Logo2() {
   return (
     <div className="text-foreground font-bold text-2xl md:text-4xl tracking-tighter">
-      Create Duality
-      <span className="text-accent "> Websites</span>
+      Michael Dos Santos Web Designer & Developer
     </div>
   );
 }

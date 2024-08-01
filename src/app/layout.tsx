@@ -7,11 +7,11 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: {
-    default: " We Create Websites | Duality Agency Portugal",
-    template: "%s | We Create Websites | Duality Agency Portugal",
+    default: "Michael Dos Santos Web Developer & Designer Portugal",
+    template: "%s | Michael Dos Santos Web Developer & Designer Portugal",
   },
   description:
-    "We create websites for clients and for ourselves. We are a team of creatives and developers who love to build websites. We love to work with clients to create websites that are beautiful, functional, and easy to use. We also love to work on our own projects and to learn new things.",
+    "I am a web developer and designer based in Portugal. I love to create websites that are beautiful, functional, and easy to use.",
 };
 export const viewport: Viewport = {
   initialScale: 1,
