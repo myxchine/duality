@@ -1,8 +1,6 @@
-import Hero from "./_components/Hero";
-import Showcase from "./_components/Showcase";
-import Portfolio from "./portfolio/page";
 import Image from "next/image";
 import Link from "next/link";
+
 export default function Home() {
   return (
     <main>
@@ -14,11 +12,11 @@ export default function Home() {
 
 function ImageHero() {
   return (
-    <section className="flex full-screen flex-col w-full relative md:flex-row   items-center justify-center max-h-[700px] md:max-h-[1000px]">
+    <section className="flex full-screen flex-col w-full relative md:flex-row   items-center justify-center max-h-[700px] md:max-h-[1100px]">
       <Image
         src="/images/hero5.jpg"
         alt="Michael Dos Santos - Designer & Developer based in Portugal"
-        className="md:aspect-square object-cover objext-position-bottomr h-full object-cover w-full "
+        className="md:aspect-square object-cover objext-position-bottomr h-full object-cover w-full brighter-image"
         width={600}
         height={1000}
         quality={100}
@@ -35,7 +33,7 @@ function ImageHero() {
 function Main() {
   return (
     <div className="flex flex-col  w-full items-center justify-center text-left absolute bottom-4 md:bottom-24 left-0 gap-4 p-6 z-[100]">
-      <h1 className="text-5xl text-center w-full max-w-3xl font-bold leading-tight font-bold  md:text-8xl tracking-tighter text-balance   ">
+      <h1 className="text-5xl text-center w-full max-w-3xl font-bold leading-tight font-semibold  md:text-8xl  text-balance   ">
         Web Designer & Developer
       </h1>
       <div className="flex flex-col gap-4     w-full max-w-3xl ">
@@ -58,5 +56,67 @@ function Main() {
         </div>
       </div>
     </div>
+  );
+}
+
+import { sites } from "@/server/db/sites";
+
+function Portfolio() {
+  return (
+    <div className="w-full ">
+      <section className="flex flex-col gap-8 p-6 w-full max-w-6xl mx-auto px-0">
+        <div className="flex flex-col gap-4 px-6">
+          <h1 className="text-3xl md:text-5xl">Projects</h1>
+          <p className="text-sm text-foreground/60 md:text-lg">
+            Take a look at some projects we run.
+          </p>
+        </div>
+
+        <PortfolioList data={sites} />
+      </section>
+    </div>
+  );
+}
+
+function PortfolioList({ data }: { data: any[] }) {
+  return (
+    <div className="flex flex-col gap-4  w-full  max-w-6xl xl:px-0">
+      <div className="flex overflow-x-auto px-6 gap-6 scrollbar-hidden">
+        {data.map((site) => (
+          <PortfolioCard
+            key={site.title.toLowerCase().replaceAll(" ", "-")}
+            portfolio={site}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function PortfolioCard({ portfolio }: { portfolio: any }) {
+  return (
+    <Link
+      href={portfolio.url}
+      className="flex flex-col  w-3/4 gap-8 md:flex-row   items-center flex-shrink-0  relative overflow-hidden "
+    >
+      <Image
+        src={`/images/sites/${portfolio.desktopImage}`}
+        alt={portfolio.title.toLowerCase().replaceAll(" ", "-")}
+        width={800}
+        height={500}
+        priority={true}
+        className="w-full h-auto rounded-md border border-foreground/20 shadow-md flex-1"
+      />
+
+      <div className="flex flex-col gap-4 w-full md:w-1/2">
+        <h2 className="text-xl md:text-3xl line-clamp-1">{portfolio.title}</h2>
+
+        <div className="flex flex-col gap-4 w-full">
+          <p className="text-sm text-foreground/50 line-clamp-2">
+            {portfolio.description}
+          </p>
+        </div>
+      </div>
+    </Link>
   );
 }

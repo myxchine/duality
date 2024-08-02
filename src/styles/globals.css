@@ -59,18 +59,10 @@ body {
   pointer-event: none;
 }
 
-@media only screen and (max-width: 508px) {
-  .fade-top-down {
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    background: linear-gradient(
-      0deg,
-      transparent 0%,
-      transparent 90%,
-      #faf9f6 100%
-    );
-    inset: 0;
-    pointer-event: none;
-  }
+.brighter-image {
+  filter: brightness(1.1);
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
 }
