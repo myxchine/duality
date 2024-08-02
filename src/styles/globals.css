@@ -26,3 +26,51 @@ body {
 .bg-gradient {
   background-image: linear-gradient(90deg, #e40000, #5800b5);
 }
+
+.full-screen {
+  height: 100svh;
+}
+
+.fade-top-down {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    transparent 0%,
+    transparent 90%,
+    #faf9f6 100%
+  );
+  inset: 0;
+  pointer-event: none;
+}
+
+.fade-down-top {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    transparent 50%,
+    #faf9f6 100%
+  );
+  inset: 0;
+  pointer-event: none;
+}
+
+@media only screen and (max-width: 508px) {
+  .fade-top-down {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background: linear-gradient(
+      0deg,
+      transparent 0%,
+      transparent 90%,
+      #faf9f6 100%
+    );
+    inset: 0;
+    pointer-event: none;
+  }
+}

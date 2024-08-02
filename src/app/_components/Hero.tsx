@@ -24,7 +24,7 @@ export default function Hero() {
 
 function Main() {
   return (
-    <div className="flex flex-col items-center justify-center  text-center">
+    <div className="flex flex-col items-center justify-center  text-center ">
       <div className="flex flex-col gap-4 border-x border-foreground/50 border-dashed p-4 mb-[2px] w-full">
         <h1 className="text-sm text-center max-w-3xl text-balance text-foreground/60 md:text-xl">
           I know how to <span className="text-foreground">Create Websites</span>
