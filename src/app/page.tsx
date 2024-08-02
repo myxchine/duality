@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <ImageHero />
       <Portfolio />
-    </main>
+    </>
   );
 }
 
@@ -32,8 +32,8 @@ function ImageHero() {
 
 function Main() {
   return (
-    <div className="flex flex-col  w-full items-center justify-center text-left absolute bottom-4 md:bottom-24 left-0 gap-4 p-6 z-[100]">
-      <h1 className="text-5xl text-center w-full max-w-3xl font-bold leading-tight font-semibold  md:text-8xl  text-balance   ">
+    <div className="flex flex-col  w-full items-center justify-center text-left absolute bottom-0 md:bottom-24 left-0 gap-4 p-6 z-[100]">
+      <h1 className="text-5xl text-center w-full max-w-3xl font-bold leading-tight tracking-tighter  md:text-8xl  text-balance   ">
         Web Designer & Developer
       </h1>
       <div className="flex flex-col gap-4     w-full max-w-3xl ">
@@ -64,7 +64,7 @@ import { sites } from "@/server/db/sites";
 function Portfolio() {
   return (
     <div className="w-full ">
-      <section className="flex flex-col gap-8 p-6 w-full max-w-6xl mx-auto px-0">
+      <section className="flex flex-col gap-8 py-12 w-full max-w-6xl mx-auto px-0">
         <div className="flex flex-col gap-4 px-6">
           <h1 className="text-3xl md:text-5xl">Projects</h1>
           <p className="text-sm text-foreground/60 md:text-lg">
