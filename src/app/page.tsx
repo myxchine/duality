@@ -4,13 +4,53 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <ImageHero />
-      <Portfolio />
+      <Hero />
+      <MyClients />
+      <AboutMicahelDosSantos />
+      <WebDevelopmentAndDesignServices />
     </>
   );
 }
 
-function ImageHero() {
+function AboutMicahelDosSantos() {
+  return (
+    <div className="w-full md:py-12">
+      <section className="flex flex-col gap-8 py-12 w-full max-w-6xl mx-auto px-0">
+        <div className="flex flex-col gap-4 px-6">
+          <h2 className="text-3xl md:text-5xl text-balance">
+            About Michael Dos Santos
+          </h2>
+          <p className="text-sm text-foreground md:text-lg">
+            I'm Michael dos Santos, a seasoned web developer and designer based
+            in Portugal. With years of experience crafting websites for various
+            industries, I focus on delivering responsive, dynamic, and visually
+            appealing web solutions tailored to your needs.
+          </p>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function WebDevelopmentAndDesignServices() {
+  return (
+    <div className="w-full md:py-12">
+      <section className="flex flex-col gap-8 py-12 w-full max-w-6xl mx-auto px-0">
+        <div className="flex flex-col gap-4 px-6">
+          <h2 className="text-3xl md:text-5xl">
+            Web Development and Design Services
+          </h2>
+          <p className="text-sm text-foreground md:text-lg">
+            I specialize in web development and design, with a focus on
+            responsive, user-friendly, and visually appealing websites.
+          </p>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function Hero() {
   return (
     <section className="flex full-screen flex-col w-full relative md:flex-row   items-center justify-center max-h-[700px] md:max-h-[1100px]">
       <Image
@@ -45,7 +85,7 @@ function Main() {
         <div className="flex flex-row items-center justify-center gap-4  w-full max-w-md mx-auto mt-2">
           <Link href="/contact" className="w-full">
             <button className="px-4 py-2 w-full border rounded bg-foreground text-background hover:bg-transparent hover:text-foreground border-foreground md:text-lg">
-              Contact
+              Get a Quote
             </button>
           </Link>
           <Link href="/portfolio" className="w-full">
@@ -61,14 +101,15 @@ function Main() {
 
 import { sites } from "@/server/db/sites";
 
-function Portfolio() {
+function MyClients() {
   return (
     <div className="w-full ">
       <section className="flex flex-col gap-8 py-12 w-full max-w-6xl mx-auto px-0">
         <div className="flex flex-col gap-4 px-6">
-          <h1 className="text-3xl md:text-5xl">Projects</h1>
+          <h2 className="text-3xl md:text-5xl">My Clients</h2>
           <p className="text-sm text-foreground/60 md:text-lg">
-            Take a look at some projects we run.
+            Take a look at some of my active client websites to learn about my
+            work.
           </p>
         </div>
 
@@ -83,10 +124,7 @@ function PortfolioList({ data }: { data: any[] }) {
     <div className="flex flex-col gap-4  w-full  max-w-6xl xl:px-0">
       <div className="flex overflow-x-auto px-6 gap-6 scrollbar-hidden">
         {data.map((site) => (
-          <PortfolioCard
-            key={site.title.toLowerCase().replaceAll(" ", "-")}
-            portfolio={site}
-          />
+          <PortfolioCard key={site.title} portfolio={site} />
         ))}
       </div>
     </div>
@@ -97,18 +135,18 @@ function PortfolioCard({ portfolio }: { portfolio: any }) {
   return (
     <Link
       href={portfolio.url}
-      className="flex flex-col  w-3/4 gap-8 md:flex-row   items-center flex-shrink-0  relative overflow-hidden "
+      className="flex flex-col  w-3/4 gap-8    md:w-2/5 items-center flex-shrink-0  relative overflow-hidden "
     >
       <Image
         src={`/images/sites/${portfolio.desktopImage}`}
-        alt={portfolio.title.toLowerCase().replaceAll(" ", "-")}
+        alt={portfolio.title}
         width={800}
         height={500}
         priority={true}
         className="w-full h-auto rounded-md border border-foreground/20 shadow-md flex-1"
       />
 
-      <div className="flex flex-col gap-4 w-full md:w-1/2">
+      <div className="flex flex-col gap-4 w-full ">
         <h2 className="text-xl md:text-3xl line-clamp-1">{portfolio.title}</h2>
 
         <div className="flex flex-col gap-4 w-full">
