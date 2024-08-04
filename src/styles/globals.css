@@ -59,10 +59,24 @@ body {
   pointer-event: none;
 }
 
-.brighter-image {
-  filter: brightness(1.1);
+.fade-right {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    #faf9f6 0%,
+    transparent 10%,
+    transparent 90%,
+    #faf9f6 100%
+  );
+  inset: 0;
+  pointer-event: none;
 }
 
-.scrollbar-hidden::-webkit-scrollbar {
-  display: none;
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

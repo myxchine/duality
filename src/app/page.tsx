@@ -121,12 +121,13 @@ function MyClients() {
 
 function PortfolioList({ data }: { data: any[] }) {
   return (
-    <div className="flex flex-col gap-4  w-full  max-w-6xl xl:px-0">
+    <div className="flex flex-col gap-4  w-full  max-w-6xl xl:px-0 relative scrollbar-hidden">
       <div className="flex overflow-x-auto px-6 gap-6 scrollbar-hidden">
         {data.map((site) => (
           <PortfolioCard key={site.title} portfolio={site} />
         ))}
       </div>
+      <div className="fade-right pointer-events-none scrollbar-hidden" />
     </div>
   );
 }
