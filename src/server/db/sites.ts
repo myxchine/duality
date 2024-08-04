@@ -6,6 +6,7 @@ export const sites = [
     desktopImage: "tds/desktop.jpg",
     mobileImage: "tds/mobile.jpg",
     url: "https://tdsenduroalgarve.com",
+    slug: "tds-enduro-bikes-algarve",
   },
   {
     title: "Fazenda Nova Boutique Hotel",
@@ -14,6 +15,7 @@ export const sites = [
     desktopImage: "fazenda/desktop.jpg",
     mobileImage: "fazenda/mobile.jpg",
     url: "https://fazendanova.eu",
+    slug: "fazenda-nova-boutique-hotel",
   },
   {
     title: "Enduro Wow",
@@ -22,6 +24,7 @@ export const sites = [
     desktopImage: "wow/desktop.jpg",
     mobileImage: "w0w/mobile.jpg",
     url: "https://endurowow.com",
+    slug: "enduro-wow",
   },
   {
     title: "IAMTONGUE",
@@ -30,6 +33,7 @@ export const sites = [
     desktopImage: "tung/desktop.jpg",
     mobileImage: "tung/mobile.jpg",
     url: "https://iamtongue.com",
+    slug: "iamtongue",
   },
   {
     title: "Maja Kureczko",
@@ -38,6 +42,7 @@ export const sites = [
     desktopImage: "maja/desktop.JPG",
     mobileImage: "tung/mobile.jpg",
     url: "https://majakureczko.com",
+    slug: "maja-kureczko",
   },
   {
     title: "New Private Jet",
@@ -46,5 +51,6 @@ export const sites = [
     desktopImage: "newprivatejet/desktop.jpg",
     mobileImage: "newprivatejet/mobile.jpg",
     url: "https://jet.duality.agency",
+    slug: "new-private-jet",
   },
 ];

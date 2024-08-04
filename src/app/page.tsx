@@ -121,7 +121,7 @@ function MyClients() {
 
 function PortfolioList({ data }: { data: any[] }) {
   return (
-    <div className="flex flex-col gap-4  w-full  max-w-6xl xl:px-0 relative scrollbar-hidden">
+    <div className="flex flex-col gap-4  w-full  max-w-6xl xl:px-4 relative scrollbar-hidden">
       <div className="flex overflow-x-auto px-6 gap-6 scrollbar-hidden">
         {data.map((site) => (
           <PortfolioCard key={site.title} portfolio={site} />
@@ -135,7 +135,7 @@ function PortfolioList({ data }: { data: any[] }) {
 function PortfolioCard({ portfolio }: { portfolio: any }) {
   return (
     <Link
-      href={portfolio.url}
+      href={`/portfolio/${portfolio.slug}`}
       className="flex flex-col  w-3/4 gap-8    md:w-2/5 items-center flex-shrink-0  relative overflow-hidden "
     >
       <Image
