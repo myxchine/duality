@@ -54,13 +54,12 @@ function Hero() {
   return (
     <section className="flex full-screen flex-col w-full relative md:flex-row   items-center justify-center max-h-[700px] md:max-h-[1100px]">
       <Image
-        src="/images/hero5.jpg"
+        src="/images/bat-full.jpg"
         alt="Michael Dos Santos - Designer & Developer based in Portugal"
-        className="md:aspect-square object-cover objext-position-bottomr h-full object-cover w-full brighter-image"
+        className="md:aspect-square object-cover objext-position-bottomr h-full object-cover w-full "
         width={600}
         height={1000}
         quality={100}
-        objectPosition="center"
         priority={true}
       />
       <Main />
