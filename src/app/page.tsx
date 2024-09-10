@@ -49,8 +49,18 @@ function WebDevelopmentAndDesignServices() {
     </div>
   );
 }
-
 function Hero() {
+  return (
+    <section className="flex full-screen flex-col w-full relative md:flex-row   items-center justify-center  md:max-h-[900px]  ">
+      <div className=" h-full  w-full " />
+      <Main2 />
+      <div className="fade-top-down " />
+      <div className="fade-down-top " />
+    </section>
+  );
+}
+
+function HeroImage() {
   return (
     <section className="flex full-screen flex-col w-full relative md:flex-row   items-center justify-center max-h-[700px] md:max-h-[1100px]">
       <Image
@@ -97,7 +107,34 @@ function Main() {
     </div>
   );
 }
+function Main2() {
+  return (
+    <div className="flex flex-col  w-full items-center justify-center text-left absolute bottom-0 md:bottom-24 left-0 gap-4 p-6 z-[100]">
+      <h1 className="text-5xl text-left w-full max-w-3xl font-bold leading-tight tracking-tighter  md:text-8xl  text-balance   ">
+        Web Designer & Developer
+      </h1>
+      <div className="flex flex-col gap-4     w-full max-w-3xl ">
+        <p className="text-left w-full text-sm w-full  md:text-xl leading-loose  mx-auto text-balance   ">
+          I curate custom, beautiful and fast websites to your wildest
+          imagination.
+        </p>
 
+        <div className="flex flex-row items-center justify-center gap-4  w-full max-w-md  mt-2">
+          <Link href="/contact" className="w-full">
+            <button className="px-4 py-2 w-full border rounded bg-foreground text-background hover:bg-transparent hover:text-foreground border-foreground md:text-lg">
+              Get a Quote
+            </button>
+          </Link>
+          <Link href="/portfolio" className="w-full">
+            <button className="px-4 py-2 w-full border border-foreground rounded  hover:bg-foreground hover:text-background md:text-lg">
+              Portfolio
+            </button>
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
 import { sites } from "@/server/db/sites";
 
 function MyClients() {
