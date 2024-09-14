@@ -18,15 +18,6 @@ export const sites = [
     slug: "fazenda-nova-boutique-hotel",
   },
   {
-    title: "Enduro Wow",
-    description:
-      "A Global Hard Enduro Community for researchiing & purchasing bikes, gear, lessons and more.",
-    desktopImage: "wow/desktop.jpg",
-    mobileImage: "w0w/mobile.jpg",
-    url: "https://endurowow.com",
-    slug: "enduro-wow",
-  },
-  {
     title: "IAMTONGUE",
     description:
       "Tung is a Professional Photographer selling his preset packs. He creates content online, based in Algarve, Portugal.",
@@ -34,6 +25,15 @@ export const sites = [
     mobileImage: "tung/mobile.jpg",
     url: "https://iamtongue.com",
     slug: "iamtongue",
+  },
+  {
+    title: "Enduro Wow",
+    description:
+      "A Global Hard Enduro Community for researchiing & purchasing bikes, gear, lessons and more.",
+    desktopImage: "wow/desktop.jpg",
+    mobileImage: "w0w/mobile.jpg",
+    url: "https://endurowow.com",
+    slug: "enduro-wow",
   },
   {
     title: "Maja Kureczko",

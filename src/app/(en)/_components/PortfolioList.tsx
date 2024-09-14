@@ -18,7 +18,7 @@ export default function PortfolioList({ data }: { data: any[] }) {
 function PortfolioCard({ portfolio }: { portfolio: any }) {
   return (
     <Link
-      href={`/portfolio/${portfolio.slug}`}
+      href={`/clients/${portfolio.slug}`}
       className="flex flex-col  w-full gap-6     items-center flex-shrink-0  relative overflow-hidden "
     >
       <Image

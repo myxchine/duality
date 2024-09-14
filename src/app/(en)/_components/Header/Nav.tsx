@@ -16,12 +16,20 @@ export default function Nav(props: any) {
         Home
       </Link>
       <Link
-        href={"/portfolio"}
+        href={"/clients"}
         className={`  ${
-          pathname === "/tours" ? "text-foreground" : ""
+          pathname === "/clients" ? "text-foreground" : ""
         } hover:underline`}
       >
-        Portfolio
+        My Clients
+      </Link>
+      <Link
+        href={"/blog"}
+        className={`  ${
+          pathname === "/blog" ? "text-foreground" : ""
+        } hover:underline`}
+      >
+        Blog
       </Link>
 
       <Link href={"/contact"}>

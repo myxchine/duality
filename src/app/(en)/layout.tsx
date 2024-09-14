@@ -7,16 +7,17 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: {
-    default: "Michael Dos Santos Web Developer & Designer Portugal",
-    template: "%s | Michael Dos Santos Web Developer & Designer Portugal",
+    default: "Custom Web Designer & Developer in Portugal - Michael Dos Santos",
+    template:
+      "%s | Custom Web Designer & Developer in Portugal - Michael Dos Santos",
   },
   description:
-    "I am a web developer and designer based in Portugal. I love to create websites that are beautiful, functional, and easy to use.",
+    "I am a custom web developer and designer based in Portugal. I love to create websites that are beautiful, functional, and easy to use.",
 };
 export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
-  themeColor: "#000",
+  themeColor: "#fff",
 };
 
 export default function RootLayout({

@@ -8,8 +8,8 @@ export function Logo() {
 
 export function Logo2() {
   return (
-    <div className="text-foreground font-bold text-2xl md:text-4xl tracking-tighter">
-      Michael Dos Santos Web Designer & Developer
+    <div className="text-foreground font-bold text-2xl md:text-4xl tracking-tighter text-balance">
+      Michael Dos Santos Web Designer & Developer Portugal
     </div>
   );
 }

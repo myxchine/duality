@@ -12,20 +12,13 @@ body {
   @apply bg-background;
   @apply text-foreground;
 }
-.full-screen {
-  height: 100svh;
-}
-
-.full-screen {
-  height: 100svh;
-}
 
 .fade-top-down {
   width: 100%;
   position: absolute;
   padding-top: 20px;
   height: 100%;
-  background: linear-gradient(0deg, transparent 0%, transparent 70%, #000 100%);
+  background: linear-gradient(0deg, transparent 0%, transparent 70%, #fff 100%);
   inset: 0;
   pointer-event: none;
 }
@@ -38,7 +31,7 @@ body {
     180deg,
     transparent 0%,
     transparent 50%,
-    #000 100%
+    #fff 100%
   );
   inset: 0;
   pointer-event: none;
@@ -52,10 +45,10 @@ body {
   height: 100%;
   background: linear-gradient(
     90deg,
-    #000 0%,
+    #fff 0%,
     transparent 10%,
     transparent 90%,
-    #000 100%
+    #fff 100%
   );
   inset: 0;
   pointer-event: none;
@@ -64,4 +57,67 @@ body {
 .scrollbar-hidden {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.full-screen {
+  height: 100svh;
+}
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.grid-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  width: 100%;
+  max-width: 1152px;
+  height: calc(100% + 68px);
+  overflow: hidden;
+  z-index: 0;
+  background-color: #ffffff;
+}
+
+.grid-lines {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background-size: 60px 60px;
+  background-image: linear-gradient(to right, #dadada 1px, transparent 1px),
+    linear-gradient(to bottom, #dadada 1px, transparent 1px);
+}
+
+.grid-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -10;
+
+  height: 100%;
+  background: radial-gradient(
+    ellipse 100% 100% at 50% 50%,
+    transparent 0%,
+    #fff 60%
+  );
+  z-index: 0; /* Ensures it stays behind any other content but above the grid lines */
+}
+
+@media screen and (min-width: 768px) {
+  .grid-lines {
+    background-size: 80px 80px;
+  }
+
+  .grid-container::after {
+    background: radial-gradient(
+      ellipse 100% 100% at 50% 50%,
+      transparent 0%,
+      #fff 50%
+    );
+  }
 }

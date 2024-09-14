@@ -21,6 +21,9 @@ const Footer = () => {
             <Link href="/" className="hover:underline text-foreground/60">
               Home
             </Link>
+            <Link href="/blog" className="hover:underline text-foreground/60">
+              Blog
+            </Link>
           </nav>
 
           <nav className="flex flex-col items-start gap-4 text-sm w-full md:gap-8">
