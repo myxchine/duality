@@ -76,7 +76,7 @@ function PortfolioList({ data }: { data: any[] }) {
 function PortfolioCard({ portfolio }: { portfolio: any }) {
   return (
     <Link
-      href={`/portfolio/${portfolio.slug}`}
+      href={`/clients/${portfolio.slug}`}
       className="flex flex-col  w-3/4 gap-8    md:w-2/5 items-center flex-shrink-0  relative overflow-hidden "
     >
       <Image
