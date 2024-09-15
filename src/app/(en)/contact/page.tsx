@@ -13,7 +13,7 @@ export default function Calculate({ searchParams }: { searchParams: any }) {
       <h1 className="text-3xl md:text-6xl w-full xl:px-0  text-left text-balance tracking-tighter p-6 pb-0  max-w-4xl mx-auto md:pt-12 text-foreground">
         Let's get <span className="text-">in touch</span>
       </h1>
-      <p className="p-6 py-4 pb-0 text-sm text-balance">
+      <p className="text md:text-lg w-full xl:px-0  text-left text-balance p-6 pb-0  max-w-4xl mx-auto  text-foreground">
         Let's do something great together! Fill in the form below or contact me
         directly at{" "}
         <a href="mailto:michael@duality.agency" className="underline">

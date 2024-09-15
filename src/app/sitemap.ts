@@ -4,10 +4,10 @@ import { sites } from "@/server/db/sites";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const sitesSitemap: MetadataRoute.Sitemap = sites.map(({ slug }) => ({
-    url: `https://michaelsantos.pt/sites/${slug}`,
+    url: `https://michaelsantos.pt/clients/${slug}`,
     alternates: {
       languages: {
-        en: `https://michaelsantos.pt/sites/${slug}`,
+        en: `https://michaelsantos.pt/clients/${slug}`,
       },
     },
   }));
@@ -32,10 +32,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
 
     {
-      url: `https://michaelsantos.pt/sites`,
+      url: `https://michaelsantos.pt/contact`,
       alternates: {
         languages: {
-          en: "https://michaelsantos.pt/sites",
+          en: "https://michaelsantos.pt/contact",
+        },
+      },
+    },
+
+    {
+      url: `https://michaelsantos.pt/clients`,
+      alternates: {
+        languages: {
+          en: "https://michaelsantos.pt/clients",
         },
       },
     },
