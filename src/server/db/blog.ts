@@ -35,12 +35,7 @@ export const blog = [
     paragraph:
       "Grow your business with our e-commerce website development services. We create secure and scalable online stores tailored to your needs.",
   },
-  {
-    heading: "SEO Services for Portuguese Websites",
-    slug: "seo-services-for-portuguese-websites",
-    paragraph:
-      "Boost your website's visibility with our expert SEO services. We help Portuguese businesses rank higher on search engines and attract more organic traffic.",
-  },
+
   {
     heading: "Content Management Systems (CMS) for Portuguese Businesses",
     slug: "content-management-systems-cms-for-portuguese-businesses",
