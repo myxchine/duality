@@ -34,7 +34,7 @@ function Main() {
     <div className="flex flex-col items-center justify-center  text-center z-[10000] mt-8 pt-4 pb-8">
       <div className="flex flex-col gap-4 p-4  w-full">
         <p className="text-sm text-center max-w-3xl text-balance text-foreground/60 md:text-xl">
-          Custom website development and design in{" "}
+          A specialised website agency in{" "}
           <span className="text-foreground">Portugal</span>
         </p>
       </div>
