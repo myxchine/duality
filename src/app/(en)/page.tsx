@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Hero from "./_components/Hero";
-import { blog } from "./_data/blog";
+import { blog } from "@/server/db/blog";
 
 export default function Home() {
   return (

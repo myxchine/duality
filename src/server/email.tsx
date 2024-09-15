@@ -22,13 +22,13 @@ export default async function sendBookingConfirmationEmail(
 ): Promise<boolean> {
   const confirmationEmailData: EmailData = {
     sender: { name: customerName, email: customerEmail },
-    to: [{ name: "Michael", email: "michael@duality.agency" }],
-    subject: `WBW Web Dev Request from ${customerName} ${customerSurname}`,
+    to: [{ name: "Michael", email: "michael.dozzantoz@gmail.com" }],
+    subject: `Web Dev Request from ${customerName} ${customerSurname}`,
     htmlContent: `<html>
       <head></head>
       <body>
-        <h1>From ${customerName} ${customerSurname} </h1>
-        <p>${customerMessage}</p>
+        <h1>Name: ${customerName} ${customerSurname} </h1>
+        <p>Message: ${customerMessage}</p>
       </body>
     </html>`,
   };
