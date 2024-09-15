@@ -1,4 +1,4 @@
-import { blog } from "../_data/blog";
+import { blog } from "@/server/db/blog";
 import { Metadata } from "next";
 import Link from "next/link";
 export const metadata: Metadata = {
