@@ -6,6 +6,7 @@ import Footer from "./_components/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
+  icons: [{ rel: "icon", url: "/favicon.ico" }],
   title: {
     default: "Custom Web Designer & Developer in Portugal - Michael Dos Santos",
     template:
