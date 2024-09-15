@@ -8,12 +8,12 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 export const metadata: Metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
   title: {
-    default: "Custom Web Designer & Developer in Portugal - Michael Dos Santos",
+    default: "Custom Web Developer & Designer in Portugal | Michael Dos Santos",
     template:
-      "%s | Custom Web Designer & Developer in Portugal - Michael Dos Santos",
+      "%s | Custom Web Developer & Designer in Portugal | Michael Dos Santos",
   },
   description:
-    "I am a custom web developer and designer based in Portugal. I love to create websites that are beautiful, functional, and easy to use.",
+    "I am a custom web developer and designer based in Lisbon, Portugal. I love to create websites that are functional, fast, look good, and are easy to use. This optimises you conversion rate and increases your profits.",
 };
 export const viewport: Viewport = {
   initialScale: 1,

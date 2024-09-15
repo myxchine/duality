@@ -34,12 +34,12 @@ function Main() {
     <div className="flex flex-col items-center justify-center  text-center z-[10000] mt-8 pt-4 pb-8">
       <div className="flex flex-col gap-4 p-4  w-full">
         <p className="text-sm text-center max-w-3xl text-balance text-foreground/60 md:text-xl">
-          Pro web development and design in{" "}
+          Custom website development and design in{" "}
           <span className="text-foreground">Portugal</span>
         </p>
       </div>
       <h1 className="text-5xl text-center w-full max-w-3xl font-bold leading-tight font-bold  md:text-6xl  text-pretty  p-4 ">
-        Custom Web Designer & Developer in Portugal
+        Custom Web Developer & Designer in Portugal
       </h1>
       <p className="text-center text-sm  md:text-xl leading-loose max-w-2xl text-balance mx-auto  p-4">
         Making your custom, beautiful and fast website dreams come true.
