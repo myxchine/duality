@@ -1,4 +1,4 @@
-import { blog } from "../../_data/blog";
+import { blog } from "@/server/db/blog";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import Link from "next/link";
