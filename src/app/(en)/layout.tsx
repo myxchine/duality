@@ -1,11 +1,14 @@
 import "@/styles/globals.css";
 import type { Metadata, Viewport } from "next";
+import Head from "next/head";
 import { GeistSans } from "geist/font/sans";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
+  applicationName: "Michael Dos Santos",
+  metadataBase: new URL(`https://michaelsantos.pt`),
   icons: [{ rel: "icon", url: "/favicon.ico" }],
   title: {
     default: "Custom Web Developer & Designer in Portugal | Michael Dos Santos",
@@ -29,6 +32,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={GeistSans.variable}>
       <body>
+        <Head>
+          <link rel="canonical" href={`https://michaelsantos.pt`} />
+        </Head>
         <main>
           <Header />
           {children}
