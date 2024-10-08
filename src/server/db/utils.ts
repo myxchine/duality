@@ -21,13 +21,14 @@ export async function newContact(currentState: any, formData: FormData) {
   }
 
   try {
+    await sendEmail(name, surname, message, email);
+
     await db.insert(contacts).values({
       name: name,
       surname: surname,
       email: email,
       message: message,
     });
-    await sendEmail(name, surname, message, email);
 
     return "Form submitted successfully!";
   } catch (error) {
