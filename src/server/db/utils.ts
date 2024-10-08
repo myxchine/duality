@@ -1,7 +1,7 @@
 "use server";
 
-import { db } from "../db";
-import { contacts, mailList } from "../db/schema";
+import { db } from ".";
+import { contacts, mailList } from "./schema";
 import sendEmail from "../email";
 
 export async function newContact(currentState: any, formData: FormData) {
@@ -37,7 +37,6 @@ export async function newContact(currentState: any, formData: FormData) {
 }
 
 export async function newMailMember(currentState: any, formData: FormData) {
-  
   const email = formData.get("email")?.toString();
 
   // Ensure all form data fields are available and valid
