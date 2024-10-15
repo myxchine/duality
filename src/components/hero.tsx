@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="text-foreground  flex flex-col items-center justify-center gap-6 py-6 md:py-48 w-full relative grid-container   z-[2]">
+    <section className="text-foreground  flex flex-col items-center justify-center gap-6 py-2 md:py-48 w-full relative grid-container   z-[2]">
       <div className="grid-lines" />
 
       <Main />
@@ -12,13 +12,7 @@ export default function Hero() {
 
 function Main() {
   return (
-    <div className="flex flex-col items-center justify-center  text-center z-[10000] mt-8 pt-4 pb-8 gap-4 md:gap-6">
-      <div className="flex flex-col gap-4  w-full">
-        <p className="text-sm text-center max-w-3xl text-balance text-black/60 md:text-xl">
-          A specialised website agency in{" "}
-          <span className="text-foreground">Portugal</span>
-        </p>
-      </div>
+    <div className="flex flex-col items-center justify-center  text-center z-[10000] mt-4 pt-4 pb-4 gap-4 md:gap-6">
       <h1 className="text-6xl md:text-7xl text-center w-full max-w-3xl leading-tight   md:text-6xl  text-balance   ">
         Custom Web Developer & Designer in Portugal
       </h1>
