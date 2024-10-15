@@ -1,24 +1,5 @@
 import Link from "next/link";
 
-const heroDict = {
-  en: {
-    title: "Pro Web Development and Design in",
-    titleAccent: "Portugal",
-    description:
-      "We specialise in curating strategic, quality, fast and professional sites for your business.",
-    button1: "Contact Us",
-    button2: "Our Work",
-  },
-  pt: {
-    title: "Agência de Desenvolvimento Web & Design",
-    titleAccent: "Portugal",
-    description:
-      "Somos especializados em curadoria de sites estratégicos, de qualidade, rápidos e profissionais para o seu negócio.",
-    button1: "Contacte-nos",
-    button2: "Nossos Clientes",
-  },
-};
-
 export default function Hero() {
   return (
     <section className="text-foreground  flex flex-col items-center justify-center gap-6 py-6 md:py-48 w-full relative grid-container   z-[2]">

@@ -13,7 +13,7 @@ export default function NavComponent(props: any) {
         <Link
           href={item.href}
           key={index}
-          className={`font-custom  ${
+          className={`font-geistMono uppercase ${
             pathname === item.href ? "text-accent" : ""
           } hover:underline`}
         >
@@ -23,7 +23,7 @@ export default function NavComponent(props: any) {
 
       <Link
         href={"/contact"}
-        className="text-background bg-accent w-fit p-2 px-4 font-custom   border border-accent hover:bg-accent/80 hidden"
+        className="text-background bg-accent w-fit p-2 px-4 font-geistMono uppercase  border border-accent hover:bg-accent/80 hidden"
       >
         Contact Us
       </Link>

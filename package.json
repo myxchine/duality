@@ -16,7 +16,8 @@
     "next": "15.0.0-rc.0",
     "postgres": "^3.4.4",
     "react": "19.0.0-rc-c3cdbec0a7-20240708",
-    "react-dom": "19.0.0-rc-c3cdbec0a7-20240708"
+    "react-dom": "19.0.0-rc-c3cdbec0a7-20240708",
+    "sonner": "^1.5.0"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Enduro",
+    "description": "This is Enduro",
+    "slug": "enduro",
+    "createdAt": "2022-01-01T12:00:00.000Z",
+    "updatedAt": "2022-01-01T12:00:00.000Z"
+  },
+  {
+    "name": "Motorcross",
+    "description": "This is Motorcross",
+    "slug": "motorcross",
+    "createdAt": "2022-01-02T13:00:00.000Z",
+    "updatedAt": "2022-01-02T13:00:00.000Z"
+  },
+  {
+    "name": "Adventure",
+    "description": "This is Adventure",
+    "slug": "adventure",
+    "createdAt": "2022-01-02T13:00:00.000Z",
+    "updatedAt": "2022-01-02T13:00:00.000Z"
+  },
+  {
+    "name": "Street",
+    "description": "This is Street",
+    "slug": "street",
+    "createdAt": "2022-01-02T13:00:00.000Z",
+    "updatedAt": "2022-01-02T13:00:00.000Z"
+  }
+]

@@ -31,13 +31,11 @@ function PortfolioCard({ portfolio }: { portfolio: any }) {
       />
 
       <div className="flex flex-col gap-4 w-full ">
-        <h2 className="text-xl md:text-3xl line-clamp-1">{portfolio.title}</h2>
+        <h2>{portfolio.title}</h2>
 
-        <div className="flex flex-col gap-4 w-full">
-          <p className="text-sm text-foreground/50 line-clamp-2 h-[40px]">
-            {portfolio.description}
-          </p>
-        </div>
+        <p className="text-sm text-foreground/50 line-clamp-2 h-[40px]">
+          {portfolio.description}
+        </p>
       </div>
     </Link>
   );

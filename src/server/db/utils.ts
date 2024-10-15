@@ -10,7 +10,6 @@ export async function newContact(currentState: any, formData: FormData) {
   const message = formData.get("message")?.toString();
   const email = formData.get("email")?.toString();
 
-  // Ensure all form data fields are available and valid
   if (
     typeof name !== "string" ||
     typeof surname !== "string" ||
@@ -40,7 +39,6 @@ export async function newContact(currentState: any, formData: FormData) {
 export async function newMailMember(currentState: any, formData: FormData) {
   const email = formData.get("email")?.toString();
 
-  // Ensure all form data fields are available and valid
   if (typeof email !== "string") {
     return "Invalid form data";
   }

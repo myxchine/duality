@@ -1,25 +1,62 @@
 "use client";
-import { useActionState, useState } from "react";
+import { useActionState, useState, useEffect } from "react";
 import { newContact } from "@/server/db/utils";
 import { useRouter } from "next/navigation";
+import { toast } from "sonner";
 
 export default function Form({
   searchParams,
 }: {
   searchParams: { [key: string]: string };
 }) {
+  const router = useRouter();
   const [status, submit, isPending] = useActionState(newContact, null);
+  const [formData, setFormData] = useState({
+    name: searchParams.name || "",
+    surname: searchParams.surname || "",
+    email: searchParams.email || "",
+    verifyEmail: "",
+    category: searchParams.category || "",
+    riders: searchParams.riders || "",
+    message: searchParams.message || "",
+  });
+
+  useEffect(() => {
+    if (status) {
+      setFormData({
+        name: "",
+        surname: "",
+        email: "",
+        verifyEmail: "",
+        category: "",
+        riders: "",
+        message: "",
+      });
+
+      toast.success("Form submitted successfully");
+
+      router.replace("/contact", { scroll: false });
+    }
+  }, [status, router]);
+
+  function updateParams(param: string, value: string) {
+    const newParams = { ...searchParams, [param]: value };
+    router.replace(`/contact?${new URLSearchParams(newParams)}`, {
+      scroll: false,
+    });
+  }
 
   return (
-    <form
-      className="flex flex-col gap-4  mx-auto py-8 w-full p-6 max-w-4xl xl:px-0"
-      action={submit}
-    >
-      <Inputs searchParams={searchParams} />
+    <form className="flex flex-col gap-4 mx-auto  w-full " action={submit}>
+      <Inputs
+        formData={formData}
+        setFormData={setFormData}
+        updateParams={updateParams}
+      />
 
       <button
         type="submit"
-        className={`bg-foreground border border-foreground rounded text-background p-2 text-center h-12 px-4 w-full w-full   ${
+        className={`bg-black font-custom2 border border-black hover:bg-black/80 text-background p-2 text-center h-12 px-4 w-full ${
           isPending ? "opacity-50 cursor-not-allowed" : ""
         }`}
         disabled={isPending}
@@ -51,48 +88,26 @@ export default function Form({
           "Submit"
         )}
       </button>
-      {status && (
-        <div className="text-foreground/60 pt-0 text-sm w-full text-center">
-          Submitted successfully!
-        </div>
-      )}
-      {!status && (
-        <div className="text-foreground/60 pt-0 text-sm w-full text-center">
-          Let's get in touch.
-        </div>
-      )}
     </form>
   );
 }
 
-function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
-  const router = useRouter();
-
-  const [formData, setFormData] = useState({
-    name: searchParams.name || "",
-    surname: searchParams.surname || "",
-    email: searchParams.email || "",
-    verifyEmail: "",
-    category: searchParams.category || "",
-    riders: searchParams.riders || "",
-    message: searchParams.message || "",
-  });
-
-  function updateParams(param: string, value: string) {
-    const newParams = { ...searchParams, [param]: value };
-
-    router.replace(`/contact?${new URLSearchParams(newParams)}`, {
-      scroll: false,
-    });
-  }
-
+function Inputs({
+  formData,
+  setFormData,
+  updateParams,
+}: {
+  formData: any;
+  setFormData: React.Dispatch<React.SetStateAction<any>>;
+  updateParams: (param: string, value: string) => void;
+}) {
   return (
     <>
       <input
         type="text"
         name="name"
         placeholder="First Name"
-        className="flex-1 p-2 px-4 rounded border border-foreground/20 bg-background w-full text-foreground placeholder:text-foreground/60"
+        className="flex-1 p-2  border border-foreground/60 bg-background w-full text-foreground placeholder:text-foreground/60"
         required
         value={formData.name}
         onBlur={(e) => updateParams("name", e.target.value)}
@@ -104,7 +119,7 @@ function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
         type="text"
         name="surname"
         placeholder="Surname"
-        className="flex-1 p-2 px-4 rounded border border-foreground/20 bg-background w-full text-foreground placeholder:text-foreground/60"
+        className="flex-1 p-2 border border-foreground/60 bg-background w-full text-foreground placeholder:text-foreground/60"
         required
         value={formData.surname}
         onBlur={(e) => updateParams("surname", e.target.value)}
@@ -116,7 +131,7 @@ function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
         type="email"
         name="email"
         placeholder="Email"
-        className="flex-1 p-2 rounded border border-foreground/20 px-4 bg-background w-full text-foreground placeholder:text-foreground/60"
+        className="flex-1 p-2  border border-foreground/60 bg-background w-full text-foreground placeholder:text-foreground/60"
         required
         value={formData.email}
         onBlur={(e) => updateParams("email", e.target.value)}
@@ -128,7 +143,7 @@ function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
         type="email"
         name="verifyEmail"
         placeholder="Verify email"
-        className="flex-1 p-2 rounded border border-foreground/20 px-4 bg-background w-full text-foreground placeholder:text-foreground/60"
+        className="flex-1 p-2  border border-foreground/60 bg-background w-full text-foreground placeholder:text-foreground/60"
         required
         value={formData.verifyEmail}
         onChange={(e) => {
@@ -139,7 +154,7 @@ function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
       <textarea
         name="message"
         placeholder="Tell us about yourself and what you're looking for."
-        className=" p-2 rounded border border-foreground/20 px-4 bg-background w-full text-foreground h-[150px] w-full placeholder:text-foreground/60"
+        className=" p-2  border border-foreground/60 bg-background w-full text-foreground h-[150px] w-full placeholder:text-foreground/60"
         required
         value={formData.message}
         onBlur={(e) => updateParams("message", e.target.value)}

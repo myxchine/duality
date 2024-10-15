@@ -8,9 +8,40 @@
   }
 }
 
+:root {
+  --background: #fff;
+  --foreground: #000;
+  --accent: #000;
+  --price: #000;
+}
+
 body {
-  @apply bg-background;
-  @apply text-foreground;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+h1 {
+  @apply text-5xl md:text-6xl font-bold font-custom text-balance;
+}
+h2 {
+  @apply text-4xl md:text-5xl font-bold font-custom  text-balance tracking-wider;
+}
+h3 {
+  @apply text-xl md:text-2xl  uppercase font-sans font-bold;
+}
+p {
+  @apply font-sans  text-lg   text-balance;
+}
+
+a {
+  @apply font-sans font-semibold  text-balance;
 }
 
 .fade-top-down {

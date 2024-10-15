@@ -13,14 +13,14 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)"],
+        custom: ["var(--font-bebas)", "sans-serif"],
       },
       colors: {
-        foreground: "#000",
-        // background: "#FAF9F6",
-        background: "#fff",
+        foreground: "var(--foreground)",
+        background: "var(--background)",
         primary: "#000",
         secondary: "#fff",
-        accent: "#e40000",
+        accent: "var(--accent)",
         accent2: "#11677D",
       },
     },

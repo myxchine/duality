@@ -1,6 +1,7 @@
 import { blog } from "@/server/db/blog";
 import { Metadata } from "next";
 import Link from "next/link";
+import { Section, Row } from "@/components/ui";
 export const metadata: Metadata = {
   title: "My Blog",
   description:
@@ -9,32 +10,29 @@ export const metadata: Metadata = {
 
 export default function Blog() {
   return (
-    <div className="w-full mt-[68px] md:mt-[120px]">
-      <section className="flex flex-col gap-20 p-6 w-full max-w-6xl mx-auto xl:px-0">
-        <div className="flex flex-col gap-4">
-          <h1 className="text-3xl md:text-5xl">My Blog</h1>
-          <p className="text-sm text-foreground/60 md:text-lg text-balance">
-            Welcome to my community where I share my services, knowledge, and
-            experiences with web development and design.
-          </p>
-        </div>
-
+    <Section>
+      <Row>
+        <h1>My Blog</h1>
+        <p className=" text-balance">
+          Welcome to my community where I share my services, knowledge, and
+          experiences with web development and design.
+        </p>
+      </Row>
+      <Row>
         <BlogList />
-      </section>
-    </div>
+      </Row>
+    </Section>
   );
 }
 
 function BlogList() {
   return (
-    <>
+    <section className="flex flex-col gap-12 w-full">
       {blog.map((blog) => (
         <div className="w-full md:py-12">
           <section className="flex flex-col gap-8  w-full max-w-6xl mx-auto px-0">
             <div className="flex flex-col gap-4 ">
-              <h2 className="text-3xl md:text-5xl text-balance">
-                {blog.heading}
-              </h2>
+              <h2>{blog.heading}</h2>
               <p className="text-sm text-foreground md:text-lg">
                 {blog.paragraph}
               </p>
@@ -48,6 +46,6 @@ function BlogList() {
           </section>
         </div>
       ))}
-    </>
+    </section>
   );
 }

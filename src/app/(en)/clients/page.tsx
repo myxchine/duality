@@ -1,7 +1,8 @@
 import { sites } from "@/server/db/sites";
-import PortfolioList from "../_components/PortfolioList";
 import { Metadata } from "next";
-
+import { Section, Row } from "@/components/ui";
+import Link from "next/link";
+import Image from "next/image";
 export const metadata: Metadata = {
   title: "My Clients",
   description:
@@ -10,18 +11,49 @@ export const metadata: Metadata = {
 
 export default function Portfolio() {
   return (
-    <div className="w-full mt-[68px] md:mt-[120px]">
-      <section className="flex flex-col gap-20 p-6 w-full max-w-6xl mx-auto xl:px-0">
-        <div className="flex flex-col gap-4">
-          <h1 className="text-3xl md:text-5xl">My Clients</h1>
-          <p className="text-sm text-foreground/60 md:text-lg text-balance">
-            Take a look at some of my active client websites to learn about my
-            work as a web developer and designer.
-          </p>
-        </div>
-
+    <Section>
+      <Row>
+        <h1>My Clients</h1>
+        <p>
+          Take a look at some of my active client websites to learn about my
+          work as a web developer and designer.
+        </p>
         <PortfolioList data={sites} />
-      </section>
+      </Row>
+    </Section>
+  );
+}
+
+function PortfolioList({ data }: { data: any[] }) {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-24  w-full  max-w-6xl relative scrollbar-hidden mt-6">
+      {data.map((site) => (
+        <PortfolioCard key={site.title} portfolio={site} />
+      ))}
     </div>
+  );
+}
+
+function PortfolioCard({ portfolio }: { portfolio: any }) {
+  return (
+    <Link
+      href={`/clients/${portfolio.slug}`}
+      className="flex flex-col  w-full gap-8 items-center flex-shrink-0  relative overflow-hidden "
+    >
+      <Image
+        src={`/images/sites/${portfolio.desktopImage}`}
+        alt={portfolio.title}
+        width={800}
+        height={500}
+        priority={true}
+        className="w-full h-auto rounded-md border border-foreground/20 shadow-md flex-1"
+      />
+
+      <div className="flex flex-col gap-4 w-full ">
+        <h2>{portfolio.title}</h2>
+
+        <p className=" line-clamp-2 font-normal">{portfolio.description}</p>
+      </div>
+    </Link>
   );
 }

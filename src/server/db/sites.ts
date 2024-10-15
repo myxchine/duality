@@ -1,5 +1,14 @@
 export const sites = [
   {
+    title: "Fazenda Nova Boutique Hotel",
+    description:
+      "Fazenda Nova is a luxurious establishment located in the Algarve region of Portugal. It offers a wide range of services, including event planning, wedding planning, and catering services.",
+    desktopImage: "fazenda/desktop.jpg",
+    mobileImage: "fazenda/mobile.jpg",
+    url: "https://fazendanova.eu",
+    slug: "fazenda-nova-boutique-hotel",
+  },
+  {
     title: "TDS Enduro Bikes Algarve",
     description:
       "An off road motorcycle rental and guided tour company based in Algarve, Portugal.",
@@ -8,14 +17,24 @@ export const sites = [
     url: "https://tdsenduroalgarve.com",
     slug: "tds-enduro-bikes-algarve",
   },
+
   {
-    title: "Fazenda Nova Boutique Hotel",
+    title: "Gym Portugal",
     description:
-      "Fazenda Nova is a luxurious establishment located in the Algarve region of Portugal. It offers a wide range of services, including event planning, wedding planning, and catering services.",
-    desktopImage: "fazenda/desktop.jpg",
+      "GymPortugal.com is a Premium Fitness Community based in Portugal.",
+    desktopImage: "gymportugal/desktop.jpg",
     mobileImage: "fazenda/mobile.jpg",
-    url: "https://fazendanova.eu",
-    slug: "fazenda-nova-boutique-hotel",
+    url: "https://gymportugal.com",
+    slug: "gym-portugal",
+  },
+  {
+    title: "New Private Jet",
+    description:
+      "NewPrivateJet.com is an international Private Jet specialist dealing with top tier clients for purchasing and information.",
+    desktopImage: "newprivatejet/desktop.jpg",
+    mobileImage: "newprivatejet/mobile.jpg",
+    url: "https://newprivatejet.com",
+    slug: "new-private-jet",
   },
   {
     title: "IAMTONGUE",
@@ -36,21 +55,12 @@ export const sites = [
     slug: "enduro-wow",
   },
   {
-    title: "Maja Kureczko",
+    title: "MotoFM",
     description:
-      "Maja Kureczko is a polish Make up Artist and eyebrow specialist.",
-    desktopImage: "maja/desktop.JPG",
-    mobileImage: "tung/mobile.jpg",
-    url: "https://majakureczko.com",
-    slug: "maja-kureczko",
-  },
-  {
-    title: "New Private Jet",
-    description:
-      "New Private Jet is an international Private Jet specialist dealing with top tier clients for purchasing and information.",
-    desktopImage: "newprivatejet/desktop.jpg",
-    mobileImage: "newprivatejet/mobile.jpg",
-    url: "https://jet.duality.agency",
-    slug: "new-private-jet",
+      "MotoFM is the Official KTM and GASGAS Motorcycle Dealer of Algarve, Portugal.",
+    desktopImage: "motofm/desktop.jpg",
+    mobileImage: "motofm/mobile.jpg",
+    url: "https://motofm.com",
+    slug: "motofm",
   },
 ];

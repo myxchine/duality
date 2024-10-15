@@ -2,9 +2,11 @@ import "@/styles/globals.css";
 import type { Metadata, Viewport } from "next";
 import Head from "next/head";
 import { GeistSans } from "geist/font/sans";
-import Header from "./_components/Header";
-import Footer from "./_components/Footer";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import localFont from "next/font/local";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   applicationName: "Michael Dos Santos",
@@ -18,6 +20,13 @@ export const metadata: Metadata = {
   description:
     "I am a custom web developer and designer based in Lisbon, Portugal. I love to create websites that are functional, fast, look good, and are easy to use. This optimises you conversion rate and increases your profits.",
 };
+
+const custom = localFont({
+  src: "../fonts/BebasNeue.woff",
+  variable: "--font-bebas",
+  weight: "100 900",
+});
+
 export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
@@ -30,7 +39,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={GeistSans.variable}>
+    <html
+      lang="en"
+      className={`${GeistSans.variable}  ${custom.variable} antialiased `}
+    >
       <body>
         <Head>
           <link rel="canonical" href={`https://michaelsantos.pt`} />
@@ -39,6 +51,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <Toaster position="bottom-center" expand={true} />
         </main>
       </body>
       <GoogleAnalytics gaId={"G-SC1YEJV0NY"} />

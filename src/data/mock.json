@@ -1,0 +1,30 @@
+[
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174000",
+    "name": "2024 KTM 300 EXC",
+    "slug": "2024-ktm-300-exc",
+    "description": "A KTM 300 EXC é um dos nomes mais reconhecidos quando se trata das Enduro mais radicais. Com um confiável motor de 2 cursos com injeção de combustível, que produz uma grande quantidade de torque e fúria de ponta, é a companheira ideal para enfrentar terrenos desafiadores. Agora com a novíssima suspensão, um novo quadro e estrutura renovada, a KTM 300 EXC de 2024 está pronta para desbravar os terrenos enduro mais difíceis do mundo.",
+    "price": 12600,
+    "currency": "EUR",
+    "sku": "2024-ktm-300-exc",
+    "stockQuantity": 10,
+    "category": "enduro",
+    "images": ["2024-ktm-300-exc-1.png", "2024-ktm-300-exc-2.png"],
+    "createdAt": "2022-01-01T12:00:00.000Z",
+    "updatedAt": "2022-01-01T12:00:00.000Z"
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174000",
+    "name": "2024 GASGAS EC 300",
+    "slug": "2024-gasgas-ec-300",
+    "description": "Prefer hard enduro over racing between the tapes? If so, then the EC 300 is definitely for you! Built to be light, powerful, and capable of scaling anything in its path, this bike is an ultra-modern enduro steed that makes light work of the gnarliest offroad terrain. With tons of torque down low and supple and easy-to-adjust WP suspension, those long, gruelling days on the bike are made much more enjoyable aboard the EC 300. Where would you take yours?",
+    "price": 11600,
+    "currency": "EUR",
+    "sku": "2024-gasgas-ec-300",
+    "stockQuantity": 10,
+    "category": "enduro",
+    "images": ["2024-gasgas-ec-300-1.jpg", "2024-gasgas-ec-300-2.png"],
+    "createdAt": "2022-01-01T12:00:00.000Z",
+    "updatedAt": "2022-01-01T12:00:00.000Z"
+  }
+]

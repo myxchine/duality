@@ -1,0 +1,7 @@
+[
+  { "href": "/", "label": "Home" },
+  { "href": "/clients", "label": "My Clients" },
+  { "href": "/blog", "label": "Blog" },
+  { "href": "/blog/about-michael-dos-santos", "label": "About Me" },
+  { "href": "/contact", "label": "Contact Me" }
+]
