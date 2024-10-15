@@ -44,47 +44,6 @@ a {
   @apply font-sans font-semibold  text-balance;
 }
 
-.fade-top-down {
-  width: 100%;
-  position: absolute;
-  padding-top: 20px;
-  height: 100%;
-  background: linear-gradient(0deg, transparent 0%, transparent 70%, #fff 100%);
-  inset: 0;
-  pointer-event: none;
-}
-
-.fade-down-top {
-  width: 100%;
-  position: absolute;
-  height: 100%;
-  background: linear-gradient(
-    180deg,
-    transparent 0%,
-    transparent 50%,
-    #fff 100%
-  );
-  inset: 0;
-  pointer-event: none;
-}
-
-.fade-right {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    #fff 0%,
-    transparent 10%,
-    transparent 90%,
-    #fff 100%
-  );
-  inset: 0;
-  pointer-event: none;
-}
-
 .scrollbar-hidden {
   -ms-overflow-style: none;
   scrollbar-width: none;
