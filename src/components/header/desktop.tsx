@@ -1,5 +1,5 @@
 import Nav from "./nav";
-import { Logo } from "@/components/logo";
+import Logo from "@/components/logo";
 import Link from "next/link";
 import { CartIcon, SearchIcon } from "@/components/icons";
 

@@ -4,7 +4,7 @@ import { useState, useEffect, use } from "react";
 import Nav from "./nav";
 import Link from "next/link";
 import { MenuIcon, CloseIcon, CartIcon } from "@/components/icons";
-import { Logo } from "@/components/logo";
+import Logo from "@/components/logo";
 import { usePathname } from "next/navigation";
 import Social from "@/components/social";
 import AnnouncementBanner from "./announcement";
