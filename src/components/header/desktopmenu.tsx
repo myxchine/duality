@@ -1,5 +1,4 @@
 import Nav from "./nav";
-import Logo from "@/components/logo";
 import Link from "next/link";
 import { CartIcon, SearchIcon } from "@/components/icons";
 
@@ -27,5 +26,13 @@ function Extras() {
         <SearchIcon stroke="black" className="  h-6 w-6" />
       </Link>
     </div>
+  );
+}
+
+export function Logo() {
+  return (
+    <Link href={"/"} className="w-full text-3xl md:text-4xl font-custom">
+      MICHAEL DOS SANTOS
+    </Link>
   );
 }

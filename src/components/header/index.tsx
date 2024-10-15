@@ -1,5 +1,5 @@
-import MobileMenu from "./mobile";
-import Menu from "./desktop";
+import MobileMenu from "./mobilemenu";
+import Menu from "./desktopmenu";
 import AnnouncementBanner from "./announcement";
 export default function Header() {
   return (

@@ -4,7 +4,6 @@ import { useState, useEffect, use } from "react";
 import Nav from "./nav";
 import Link from "next/link";
 import { MenuIcon, CloseIcon, CartIcon } from "@/components/icons";
-import Logo from "@/components/logo";
 import { usePathname } from "next/navigation";
 import Social from "@/components/social";
 import AnnouncementBanner from "./announcement";
@@ -73,5 +72,13 @@ function Open({ setIsOpen }: { setIsOpen: any }) {
         </div>
       </div>
     </div>
+  );
+}
+
+export function Logo() {
+  return (
+    <Link href={"/"} className="w-full text-3xl md:text-4xl font-custom">
+      MICHAEL DOS SANTOS
+    </Link>
   );
 }
