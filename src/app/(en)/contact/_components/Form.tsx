@@ -47,7 +47,7 @@ export default function Form({
   }
 
   return (
-    <form className="flex flex-col gap-4 mx-auto  w-full " action={submit}>
+    <form className="flex flex-col gap-4 mx-auto mt-4  w-full " action={submit}>
       <Inputs
         formData={formData}
         setFormData={setFormData}
@@ -56,7 +56,7 @@ export default function Form({
 
       <button
         type="submit"
-        className={`bg-black font-custom2 border border-black hover:bg-black/80 text-background p-2 text-center h-12 px-4 w-full ${
+        className={`bg-foreground font-custom2 border border-foreground hover:bg-background hover:text-foreground text-background p-2 text-center h-12 px-4 w-full ${
           isPending ? "opacity-50 cursor-not-allowed" : ""
         }`}
         disabled={isPending}
@@ -153,8 +153,8 @@ function Inputs({
 
       <textarea
         name="message"
-        placeholder="Tell us about yourself and what you're looking for."
-        className=" p-2  border border-foreground/60 bg-background w-full text-foreground h-[150px] w-full placeholder:text-foreground/60"
+        placeholder="Tell me about yourself and what you're looking for."
+        className=" p-2  border border-foreground/60 bg-background w-full text-foreground h-[150px] placeholder:text-foreground/60"
         required
         value={formData.message}
         onBlur={(e) => updateParams("message", e.target.value)}

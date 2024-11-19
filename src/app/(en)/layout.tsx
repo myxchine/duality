@@ -27,6 +27,12 @@ const custom = localFont({
   weight: "100 900",
 });
 
+const mono = localFont({
+  src: "../fonts/GeistMonoVF.woff",
+  variable: "--font-mono",
+  weight: "100 900",
+});
+
 export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
@@ -41,16 +47,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${GeistSans.variable}  ${custom.variable} antialiased `}
+      className={`${GeistSans.variable} ${mono.variable}  ${custom.variable} antialiased `}
     >
       <body>
         <Head>
           <link rel="canonical" href={`https://michaelsantos.pt`} />
         </Head>
         <main>
-          <Header />
           {children}
-          <Footer />
           <Toaster position="bottom-center" expand={true} />
         </main>
       </body>

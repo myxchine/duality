@@ -1,6 +1,6 @@
 import Form from "./_components/Form";
+import Link from "next/link";
 import { Metadata } from "next";
-import { Section, Row } from "@/components/ui";
 export const metadata: Metadata = {
   title: "Contact us about your idea",
   description:
@@ -9,16 +9,18 @@ export const metadata: Metadata = {
 
 export default function Calculate({ searchParams }: { searchParams: any }) {
   return (
-    <Section>
-      <Row>
-        <h1>
-          Let's get <span className="text-">in touch</span>
-        </h1>
+    <div className="w-full full-screen fixed top-0 left-0">
+      <div className="flex flex-col max-w-4xl mx-auto gap-4 p-8 full-screen justify-center ">
+        <Link href="/" className="flex flex-col  text-foreground">
+          <p className="font-custom text-2xl md:text-3xl uppercase">
+            Michael Dos Santos
+          </p>
+          <h1>Let's get in touch</h1>
+        </Link>
         <p>
-          Let's do something great together! Fill in the form below or contact
-          me directly at{" "}
-          <a href="mailto:michael@duality.agency" className="underline">
-            michael@duality.agency
+          Or contact me directly at{" "}
+          <a href="mailto:michael.dozzantoz@gmail.com" className="underline">
+            michael.dozzantoz@gmail.com
           </a>{" "}
           or{" "}
           <a href="tel:+351 964 691 830" className="underline">
@@ -26,7 +28,7 @@ export default function Calculate({ searchParams }: { searchParams: any }) {
           </a>
         </p>
         <Form searchParams={searchParams} />
-      </Row>
-    </Section>
+      </div>
+    </div>
   );
 }
