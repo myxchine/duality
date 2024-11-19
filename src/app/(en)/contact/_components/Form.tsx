@@ -39,7 +39,10 @@ export default function Form({
   }
 
   return (
-    <form className="flex flex-col gap-4 mx-auto mt-4  w-full " action={submit}>
+    <form
+      className="flex flex-col gap-4 mt-4  w-full   max-w-xl"
+      action={submit}
+    >
       <Inputs
         formData={formData}
         setFormData={setFormData}
@@ -48,7 +51,7 @@ export default function Form({
 
       <button
         type="submit"
-        className={`bg-foreground font-custom2 border border-foreground hover:bg-background hover:text-foreground text-background p-2 text-center h-12 px-4 w-full ${
+        className={`bg-accent font-semibold text-background  border rounded border-accent hover:bg-background hover:text-accent  p-2 text-center h-12 px-4 w-full ${
           isPending ? "opacity-50 cursor-not-allowed" : ""
         }`}
         disabled={isPending}
@@ -77,7 +80,7 @@ export default function Form({
             </svg>
           </div>
         ) : (
-          "Submit"
+          "Submit ->"
         )}
       </button>
     </form>
@@ -99,7 +102,7 @@ function Inputs({
         type="text"
         name="name"
         placeholder="Name"
-        className="flex-1 p-2  border border-foreground/60 bg-background w-full text-foreground placeholder:text-foreground/60"
+        className="flex-1 p-2  border border-foreground/60 bg-background w-full text-foreground placeholder:text-foreground/60 rounded"
         required
         value={formData.name}
         onBlur={(e) => updateParams("name", e.target.value)}
@@ -111,7 +114,7 @@ function Inputs({
         type="email"
         name="email"
         placeholder="Email"
-        className="flex-1 p-2  border border-foreground/60 bg-background w-full text-foreground placeholder:text-foreground/60"
+        className="flex-1 p-2  border border-foreground/60 bg-background w-full text-foreground placeholder:text-foreground/60 rounded"
         required
         value={formData.email}
         onBlur={(e) => updateParams("email", e.target.value)}
@@ -123,7 +126,7 @@ function Inputs({
       <textarea
         name="message"
         placeholder="Tell me about yourself and what you're looking for."
-        className=" p-2  border border-foreground/60 bg-background w-full text-foreground h-[150px] placeholder:text-foreground/60"
+        className=" p-2  border border-foreground/60 bg-background w-full text-foreground h-[150px] placeholder:text-foreground/60 rounded"
         required
         value={formData.message}
         onBlur={(e) => updateParams("message", e.target.value)}
