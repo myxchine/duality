@@ -6,13 +6,11 @@ import sendEmail from "../email";
 
 export async function newContact(currentState: any, formData: FormData) {
   const name = formData.get("name")?.toString();
-  const surname = formData.get("surname")?.toString();
   const message = formData.get("message")?.toString();
   const email = formData.get("email")?.toString();
 
   if (
     typeof name !== "string" ||
-    typeof surname !== "string" ||
     typeof message !== "string" ||
     typeof email !== "string"
   ) {
@@ -20,14 +18,7 @@ export async function newContact(currentState: any, formData: FormData) {
   }
 
   try {
-    await sendEmail(name, surname, message, email);
-
-    await db.insert(contacts).values({
-      name: name,
-      surname: surname,
-      email: email,
-      message: message,
-    });
+    await sendEmail(name, message, email);
 
     return "Form submitted successfully!";
   } catch (error) {

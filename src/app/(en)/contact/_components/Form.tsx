@@ -13,11 +13,7 @@ export default function Form({
   const [status, submit, isPending] = useActionState(newContact, null);
   const [formData, setFormData] = useState({
     name: searchParams.name || "",
-    surname: searchParams.surname || "",
     email: searchParams.email || "",
-    verifyEmail: "",
-    category: searchParams.category || "",
-    riders: searchParams.riders || "",
     message: searchParams.message || "",
   });
 
@@ -25,11 +21,7 @@ export default function Form({
     if (status) {
       setFormData({
         name: "",
-        surname: "",
         email: "",
-        verifyEmail: "",
-        category: "",
-        riders: "",
         message: "",
       });
 
@@ -106,25 +98,13 @@ function Inputs({
       <input
         type="text"
         name="name"
-        placeholder="First Name"
+        placeholder="Name"
         className="flex-1 p-2  border border-foreground/60 bg-background w-full text-foreground placeholder:text-foreground/60"
         required
         value={formData.name}
         onBlur={(e) => updateParams("name", e.target.value)}
         onChange={(e) => {
           setFormData({ ...formData, name: e.target.value });
-        }}
-      />
-      <input
-        type="text"
-        name="surname"
-        placeholder="Surname"
-        className="flex-1 p-2 border border-foreground/60 bg-background w-full text-foreground placeholder:text-foreground/60"
-        required
-        value={formData.surname}
-        onBlur={(e) => updateParams("surname", e.target.value)}
-        onChange={(e) => {
-          setFormData({ ...formData, surname: e.target.value });
         }}
       />
       <input
@@ -137,17 +117,6 @@ function Inputs({
         onBlur={(e) => updateParams("email", e.target.value)}
         onChange={(e) => {
           setFormData({ ...formData, email: e.target.value });
-        }}
-      />
-      <input
-        type="email"
-        name="verifyEmail"
-        placeholder="Verify email"
-        className="flex-1 p-2  border border-foreground/60 bg-background w-full text-foreground placeholder:text-foreground/60"
-        required
-        value={formData.verifyEmail}
-        onChange={(e) => {
-          setFormData({ ...formData, verifyEmail: e.target.value });
         }}
       />
 

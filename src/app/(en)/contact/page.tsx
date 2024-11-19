@@ -15,7 +15,7 @@ export default function Calculate({ searchParams }: { searchParams: any }) {
           <p className="font-custom text-2xl md:text-3xl uppercase">
             Michael Dos Santos
           </p>
-          <h1>Let's get in touch</h1>
+          <h1>Contact Me</h1>
         </Link>
         <p>
           Or contact me directly at{" "}

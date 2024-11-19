@@ -13,22 +13,19 @@ interface EmailData {
   htmlContent: string;
 }
 
-export default async function sendBookingConfirmationEmail(
+export default async function EmailContactForm(
   customerName: string,
-  customerSurname: string,
-
   customerMessage: string,
   customerEmail: string
 ): Promise<boolean> {
   const confirmationEmailData: EmailData = {
     sender: { name: customerName, email: customerEmail },
     to: [{ name: "Michael", email: "michael.dozzantoz@gmail.com" }],
-    subject: `Web Dev Request from ${customerName} ${customerSurname}`,
+    subject: `michaelsantos.pt contact from ${customerName}`,
     htmlContent: `<html>
       <head></head>
       <body>
-        <h1>Name: ${customerName} ${customerSurname} </h1>
-        <p>Message: ${customerMessage}</p>
+        <p>${customerMessage}</p>
       </body>
     </html>`,
   };

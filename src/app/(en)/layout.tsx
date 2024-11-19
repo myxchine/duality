@@ -35,8 +35,9 @@ const mono = localFont({
 
 export const viewport: Viewport = {
   initialScale: 1,
-  maximumScale: 5,
-  themeColor: "#fff",
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: "#000",
 };
 
 export default function RootLayout({
