@@ -2,9 +2,6 @@ import "@/styles/globals.css";
 import type { Metadata, Viewport } from "next";
 import Head from "next/head";
 import { GeistSans } from "geist/font/sans";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import localFont from "next/font/local";
 import { Toaster } from "sonner";
 
@@ -59,7 +56,6 @@ export default function RootLayout({
           <Toaster position="bottom-center" expand={true} />
         </main>
       </body>
-      <GoogleAnalytics gaId={"G-SC1YEJV0NY"} />
     </html>
   );
 }
