@@ -2,7 +2,7 @@ import Form from "./_components/Form";
 import Link from "next/link";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Contact us about your idea",
+  title: "Contact me about your idea",
   description:
     "We create websites for clients and for ourselves. We are a team of creatives and developers who love to build websites. We love to work with clients to create websites that are beautiful, functional, and easy to use. We also love to work on our own projects and to learn new things.",
 };

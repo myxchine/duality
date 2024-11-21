@@ -10,9 +10,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(`https://michaelsantos.pt`),
   icons: [{ rel: "icon", url: "/favicon.ico" }],
   title: {
-    default: "Custom Web Developer & Designer in Portugal | Michael Dos Santos",
+    default: "Michael Dos Santos Designer & Developer",
     template:
-      "%s | Custom Web Developer & Designer in Portugal | Michael Dos Santos",
+      "%s | Michael Dos Santos Designer & Developer",
   },
   description:
     "I am a custom web developer and designer based in Lisbon, Portugal. I love to create websites that are functional, fast, look good, and are easy to use. This optimises you conversion rate and increases your profits.",
@@ -34,7 +34,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
-  themeColor: "#000",
+  themeColor: "#fff",
 };
 
 export default function RootLayout({

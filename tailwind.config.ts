@@ -16,8 +16,8 @@ const config: Config = {
         custom: ["var(--font-bebas)", "sans-serif"],
       },
       colors: {
-        foreground: "#fff",
-        background: "#000",
+        foreground: "#000",
+        background: "#fff",
         primary: "#000",
         secondary: "#fff",
         accent: "var(--accent)",
