@@ -27,7 +27,7 @@ body {
   }
 }
 strong {
-  @apply text-accent font-bold;
+  @apply text-accent font-bold uppercase;
 }
 
 h1 {
@@ -43,7 +43,7 @@ p {
   @apply max-w-md font-mono  text-balance md:text-lg;
 }
 a {
-  @apply text-accent  uppercase;
+  @apply text-accent  uppercase font-bold;
 }
 
 .scrollbar-hidden {
