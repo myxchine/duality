@@ -11,7 +11,7 @@
 :root {
   --background: #ffffff;
   --foreground: #000000;
-  --accent: #e32c2c;
+  --accent: #000000;
   --price: #000;
 }
 
@@ -27,7 +27,7 @@ body {
   }
 }
 strong {
-  @apply text-accent font-normal;
+  @apply text-accent font-bold;
 }
 
 h1 {
