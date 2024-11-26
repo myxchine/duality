@@ -80,7 +80,7 @@ export default function Form({
             </svg>
           </div>
         ) : (
-          "Submit >"
+          "Submit"
         )}
       </button>
     </form>

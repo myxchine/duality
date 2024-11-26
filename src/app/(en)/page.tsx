@@ -31,7 +31,7 @@ function Content() {
         </p>
 
         <Button type={1} href="/contact">
-          Contact Me {">"}
+          Contact Me
         </Button>
       </div>
     </>

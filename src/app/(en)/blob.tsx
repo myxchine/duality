@@ -40,7 +40,7 @@ const OrganicShape = () => {
   };
 
   const getRandomPosition = () => {
-    return randomBetween({ lower: 20, upper: 80 });
+    return randomBetween({ lower: 40, upper: 60 });
   };
 
   const getRandomBoolean = () => {
