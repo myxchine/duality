@@ -16,7 +16,7 @@ export default function Button({
       href={href}
       className={`${
         buttonType[type - 1]
-      } w-fit px-4 py-2  mt-2 border font-geistMono uppercase flex flex-col items-center justify-center `}
+      } w-fit px-4 py-2  mt-2 border rounded-md font-mono  flex flex-col items-center justify-center `}
     >
       {children}
     </Link>

@@ -51,7 +51,7 @@ export default function Form({
 
       <button
         type="submit"
-        className={`bg-accent font-semibold text-background  border rounded border-accent hover:bg-background hover:text-accent  p-2 text-center h-12 px-4 w-full ${
+        className={`bg-accent font-mono uppercase font-semibold text-background  border rounded border-accent hover:bg-background hover:text-accent  p-2 text-center h-12 px-4 w-full ${
           isPending ? "opacity-50 cursor-not-allowed" : ""
         }`}
         disabled={isPending}
@@ -80,7 +80,7 @@ export default function Form({
             </svg>
           </div>
         ) : (
-          "Submit ->"
+          "Submit >"
         )}
       </button>
     </form>

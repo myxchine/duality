@@ -1,12 +1,21 @@
-"use server";
-
 import { sites } from "@/server/db/sites";
 import Image from "next/image";
 import Link from "next/link";
+import Blob from "./blob";
+import { Button } from "@/components/ui";
 
 export default async function Home() {
   return (
-    <div className="w-full full-screen fixed top-0 left-0">
+    <div className="w-full full-screen fixed top-0 left-0 bg-white flex flex-col items-center justify-center overflow-hidden">
+      <Content />
+      <Blob />
+    </div>
+  );
+}
+
+function Content() {
+  return (
+    <>
       <div className="flex flex-col max-w-4xl mx-auto gap-4 p-8 pb-24 md:pb-32 full-screen justify-center ">
         <div className="flex flex-col  ">
           <p className="font-custom text-2xl md:text-3xl uppercase">
@@ -21,15 +30,11 @@ export default async function Home() {
           them.
         </p>
 
-        <Link
-          href={`/contact`}
-          className="hover:underline font-mono text-balance mt-2 md:mt-4 text-lg md:text-xl pl-1 w-fit"
-        >
-          <span className="font-mono">Contact Me</span>{" "}
-          <span className="font-sans"> {"->"} </span>
-        </Link>
+        <Button type={1} href="/contact">
+          Contact Me {">"}
+        </Button>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -8,6 +8,11 @@
   }
 }
 
+.mask{
+  mix-blend-mode: difference; /* Inverts colors under it */
+  pointer-events: none; /* Ensures the mask doesn't block interactions */
+}
+
 :root {
   --background: #ffffff;
   --foreground: #000000;
