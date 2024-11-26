@@ -73,7 +73,7 @@ const OrganicShape = () => {
       }));
     }, 1000);
 
-    const dimensionInterval = setInterval(() => {
+    /* const dimensionInterval = setInterval(() => {
       setDimensions((prev) => ({
         width: getRandomBoolean() ? getRandomWidth() : prev.width,
         height: getRandomBoolean() ? getRandomHeight() : prev.height,
@@ -81,17 +81,17 @@ const OrganicShape = () => {
     }, 500);
 
     // New interval for position changes
-    const positionInterval = setInterval(() => {
+   const positionInterval = setInterval(() => {
       setPosition({
         x: getRandomPosition(),
         y: getRandomPosition(),
       });
-    }, 2000); // Move every 2 seconds
+    }, 2000); // Move every 2 seconds */
 
     return () => {
       clearInterval(borderInterval);
-      clearInterval(dimensionInterval);
-      clearInterval(positionInterval);
+      //  clearInterval(dimensionInterval);
+      //  clearInterval(positionInterval);
     };
   }, []);
 
@@ -99,7 +99,7 @@ const OrganicShape = () => {
     <div
       className="mask fixed max-w-3xl aspect-square"
       style={{
-        width: `${dimensions.width}svh`,
+        width: `${dimensions.width + 30}%`,
         height: `${dimensions.height}svh`,
         borderRadius: `
           ${borderRadius.topLeft}%
@@ -114,7 +114,7 @@ const OrganicShape = () => {
         transition: "all 2s linear", // Smooth transitions for all properties
         left: `${position.x}%`,
         top: `${position.y}%`,
-        transform: "translate(-50%, -50%)", // Center the div on its position
+        transform: "translate(-50%, -55%)", // Center the div on its position
       }}
     />
   );
