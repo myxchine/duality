@@ -13,6 +13,10 @@ const OrganicShape = () => {
     slashBottomLeft: 44,
   });
 
+  const colours = ["#FFFFFF", "#EBEBEB"];
+
+  const [colour, setColour] = useState(colours[0]);
+
   const [dimensions, setDimensions] = useState({
     width: 80,
     height: 50,
@@ -28,23 +32,27 @@ const OrganicShape = () => {
   }
 
   const getRandomBorderRadius = () => {
-    return randomBetween({ lower: 10, upper: 90 });
+    return randomBetween({ lower: 30, upper: 90 });
   };
 
   const getRandomHeight = () => {
-    return randomBetween({ lower: 20, upper: 60 });
+    return randomBetween({ lower: 45, upper: 55 });
   };
 
   const getRandomWidth = () => {
-    return randomBetween({ lower: 10, upper: 90 });
+    return randomBetween({ lower: 75, upper: 85 });
   };
 
   const getRandomPosition = () => {
-    return randomBetween({ lower: 40, upper: 60 });
+    return randomBetween({ lower: 47, upper: 53 });
   };
 
   const getRandomBoolean = () => {
     return Math.random() < 0.5;
+  };
+
+  const getRandomColour = () => {
+    return Math.floor(Math.random() * colours.length);
   };
 
   useEffect(() => {
@@ -71,9 +79,11 @@ const OrganicShape = () => {
           ? getRandomBorderRadius()
           : prev.slashBottomLeft,
       }));
-    }, 1000);
 
-    /* const dimensionInterval = setInterval(() => {
+      setColour((prev) => (getRandomBoolean() ?  colours[getRandomColour()] : prev));
+    }, 500);
+
+    const dimensionInterval = setInterval(() => {
       setDimensions((prev) => ({
         width: getRandomBoolean() ? getRandomWidth() : prev.width,
         height: getRandomBoolean() ? getRandomHeight() : prev.height,
@@ -81,26 +91,26 @@ const OrganicShape = () => {
     }, 500);
 
     // New interval for position changes
-   const positionInterval = setInterval(() => {
+    const positionInterval = setInterval(() => {
       setPosition({
         x: getRandomPosition(),
         y: getRandomPosition(),
       });
-    }, 2000); // Move every 2 seconds */
+    }, 3000); // Move every 2 seconds
 
     return () => {
       clearInterval(borderInterval);
-      //  clearInterval(dimensionInterval);
-      //  clearInterval(positionInterval);
+      clearInterval(dimensionInterval);
+      clearInterval(positionInterval);
     };
   }, []);
 
   return (
     <div
-      className="mask fixed max-w-3xl aspect-square"
+      className="mask fixed max-w-4xl"
       style={{
         width: `${dimensions.width + 30}%`,
-        height: `${dimensions.height}svh`,
+        height: `${dimensions.height * 2 + 300}px`,
         borderRadius: `
           ${borderRadius.topLeft}%
           ${borderRadius.topRight}%
@@ -110,8 +120,8 @@ const OrganicShape = () => {
           ${borderRadius.slashTopRight}%
           ${borderRadius.slashBottomRight}%
           ${borderRadius.slashBottomLeft}%`,
-        backgroundColor: "white",
-        transition: "all 2s linear", // Smooth transitions for all properties
+        backgroundColor: colour,
+        transition: "all 3s ease-in-out", // Smooth transitions for all properties
         left: `${position.x}%`,
         top: `${position.y}%`,
         transform: "translate(-50%, -55%)", // Center the div on its position
