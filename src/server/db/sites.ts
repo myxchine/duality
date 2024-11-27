@@ -32,7 +32,7 @@ export const sites = [
     title: "Archie Construction",
     description:
       "Archie Construction is a leading Professional Mini Excavator & Rental Algarve Service in Portugal.",
-    desktopImage: "archie/desktop.jpg",
+    desktopImage: "archie/desktop.JPG",
     mobileImage: "archie/mobile.jpg",
     url: "https://archie.michaelsantos.pt",
     slug: "archie-construction",
