@@ -19,6 +19,25 @@ export const sites = [
   },
 
   {
+    title: "New Private Jet",
+    description:
+      "NewPrivateJet.com is an international Private Jet specialist dealing with top tier clients for purchasing and information.",
+    desktopImage: "newprivatejet/desktop.jpg",
+    mobileImage: "newprivatejet/mobile.jpg",
+    url: "https://newprivatejet.com",
+    slug: "new-private-jet",
+  },
+
+  {
+    title: "Archie Construction",
+    description:
+      "Archie Construction is a leading Professional Mini Excavator & Rental Algarve Service in Portugal.",
+    desktopImage: "archie/desktop.jpg",
+    mobileImage: "archie/mobile.jpg",
+    url: "https://archie.michaelsantos.pt",
+    slug: "archie-construction",
+  },
+  {
     title: "Gym Portugal",
     description:
       "GymPortugal.com is a Premium Fitness Community based in Portugal.",
@@ -28,13 +47,13 @@ export const sites = [
     slug: "gym-portugal",
   },
   {
-    title: "New Private Jet",
+    title: "MotoFM",
     description:
-      "NewPrivateJet.com is an international Private Jet specialist dealing with top tier clients for purchasing and information.",
-    desktopImage: "newprivatejet/desktop.jpg",
-    mobileImage: "newprivatejet/mobile.jpg",
-    url: "https://newprivatejet.com",
-    slug: "new-private-jet",
+      "MotoFM is the Official KTM and GASGAS Motorcycle Dealer of Algarve, Portugal.",
+    desktopImage: "motofm/desktop.jpg",
+    mobileImage: "motofm/mobile.jpg",
+    url: "https://motofm.com",
+    slug: "motofm",
   },
   {
     title: "IAMTONGUE",
@@ -53,14 +72,5 @@ export const sites = [
     mobileImage: "w0w/mobile.jpg",
     url: "https://endurowow.com",
     slug: "enduro-wow",
-  },
-  {
-    title: "MotoFM",
-    description:
-      "MotoFM is the Official KTM and GASGAS Motorcycle Dealer of Algarve, Portugal.",
-    desktopImage: "motofm/desktop.jpg",
-    mobileImage: "motofm/mobile.jpg",
-    url: "https://motofm.com",
-    slug: "motofm",
   },
 ];

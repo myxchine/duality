@@ -34,7 +34,7 @@ const OrganicShape = () => {
   }
 
   const getRandomBorderRadius = () => {
-    return randomBetween({ lower: 30, upper: 90 });
+    return randomBetween({ lower: 40, upper: 90 });
   };
 
   const getRandomHeight = () => {
