@@ -1,7 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
+import useDeviceType from "./isDeviceType";
 
 const OrganicShape = () => {
+  const isMobile = useDeviceType();
   const [borderRadius, setBorderRadius] = useState({
     topLeft: 24,
     topRight: 76,
@@ -44,7 +46,10 @@ const OrganicShape = () => {
   };
 
   const getRandomPosition = () => {
-    return randomBetween({ lower: 47, upper: 53 });
+    return randomBetween({
+      lower: isMobile ? 47 : 49,
+      upper: isMobile ? 53 : 51,
+    });
   };
 
   const getRandomBoolean = () => {
@@ -56,6 +61,31 @@ const OrganicShape = () => {
   };
 
   useEffect(() => {
+    // Immediately update states on mount
+    setBorderRadius({
+      topLeft: getRandomBorderRadius(),
+      topRight: getRandomBorderRadius(),
+      bottomRight: getRandomBorderRadius(),
+      bottomLeft: getRandomBorderRadius(),
+      slashTopLeft: getRandomBorderRadius(),
+      slashTopRight: getRandomBorderRadius(),
+      slashBottomRight: getRandomBorderRadius(),
+      slashBottomLeft: getRandomBorderRadius(),
+    });
+
+    setColour(colours[getRandomColour()]);
+
+    setDimensions({
+      width: getRandomWidth(),
+      height: getRandomHeight(),
+    });
+
+    setPosition({
+      x: getRandomPosition(),
+      y: getRandomPosition(),
+    });
+
+    // Continue with intervals for further updates
     const borderInterval = setInterval(() => {
       setBorderRadius((prev) => ({
         topLeft: getRandomBoolean() ? getRandomBorderRadius() : prev.topLeft,
@@ -80,23 +110,24 @@ const OrganicShape = () => {
           : prev.slashBottomLeft,
       }));
 
-      setColour((prev) => (getRandomBoolean() ?  colours[getRandomColour()] : prev));
-    }, 500);
+      setColour((prev) =>
+        getRandomBoolean() ? colours[getRandomColour()] : prev
+      );
+    }, 3000);
 
     const dimensionInterval = setInterval(() => {
       setDimensions((prev) => ({
         width: getRandomBoolean() ? getRandomWidth() : prev.width,
         height: getRandomBoolean() ? getRandomHeight() : prev.height,
       }));
-    }, 500);
+    }, 3000);
 
-    // New interval for position changes
     const positionInterval = setInterval(() => {
       setPosition({
         x: getRandomPosition(),
         y: getRandomPosition(),
       });
-    }, 3000); // Move every 2 seconds
+    }, 3000);
 
     return () => {
       clearInterval(borderInterval);
@@ -124,7 +155,7 @@ const OrganicShape = () => {
         transition: "all 3s ease-in-out", // Smooth transitions for all properties
         left: `${position.x}%`,
         top: `${position.y}%`,
-        transform: "translate(-50%, -55%)", // Center the div on its position
+        transform: "translate(-50%, -60%)", // Center the div on its position
       }}
     />
   );
