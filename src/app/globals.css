@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #000;
+  --sitewidth: 100rem;
+  --headerwidth: 100rem;
+}
+
+body {
+  @apply bg-secondary text-foreground font-sans text-balance;
+}
+
+p {
+  @apply text-xs md:text-sm text-foreground/80;
+}
+
+a {
+  @apply text-xs md:text-sm;
+}
+
+span {
+  @apply text-xs md:text-sm;
+}
+
+h1 {
+  @apply text-2xl md:text-5xl font-accent mb-1 md:mb-2;
+}
+
+h2 {
+  @apply text-xl md:text-3xl font-accent;
+}
+
+h3 {
+  @apply text-lg md:text-2xl font-accent;
+}
+
+.article-content ul {
+  @apply flex flex-col gap-4;
+}
+
+.article-content ol {
+  @apply flex flex-col gap-4;
+}
+
+.article-content li {
+  @apply list-disc text-xs ml-4;
+}
+
+.article-content hr {
+  @apply mt-8
+}
+
+.bottomupgradient2 {
+  background: linear-gradient(0deg, var(--accent) 10%, #e4e4e000 60%);
+  z-index: 6;
+}
+
+.bottomupgradient {
+  background: linear-gradient(0deg, var(--accent) 50%, #e4e4e000 70%);
+  z-index: 6;
+}
+
+.bottomupgradient3 {
+  background: linear-gradient(0deg, var(--accent) 35%, #e4e4e000 60%);
+  z-index: 6;
+}
+
+.topdowngradient {
+  background: linear-gradient(180deg, var(--accent) 0%, #e4e4e000 30%);
+}
+
+.article-content h2 {
+  @apply mt-8;
+}
+
+.article-content h3 {
+  @apply mt-8;
+}
+
+.font-accent {
+  @apply tracking-tighter;
+}
+
+.masked-div {
+  mask: linear-gradient(transparent, black, black);
+  backdrop-filter: blur(10px);
+}
+
+.highlight-div {
+  @apply backdrop-blur-xl p-4 md:p-6 rounded-xl w-fit bg-white/10;
+}
+
+.url {
+  @apply px-4 py-2 rounded-lg bg-white/10;
+}
