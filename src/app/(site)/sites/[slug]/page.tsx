@@ -33,18 +33,20 @@ export default async function sitePage({ params }: Params) {
 
               <div className="z-10 w-full flex flex-col text-center justify-center items-center  gap-2 md:gap-4 absolute bottom-0  p-5 md:p-8 max-w-2xl mx-auto">
                 <h1>{site.title}</h1>
+
+                <p>{site.excerpt}</p>
+
                 <a
                   href={"https://" + site.url}
                   target="_blank"
                   rel="noreferrer"
                   className="url"
                 >
-                  {site.url}{" "}
+                  Go to {site.url}
                 </a>
-                <p>{site.excerpt}</p>
               </div>
 
-              <div className="bottomupgradient absolute bottom-[40px]  left-0 w-full h-[50%]  md:h-[35%]" />
+              <div className="bottomupgradient absolute bottom-[37px]  left-0 w-full h-[50%]  md:h-[35%]" />
             </div>
           </Component>
         </Row>
