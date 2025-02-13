@@ -2,7 +2,7 @@
 title: "Your Business Deserves a World-Class Website"
 excerpt: "In today’s competitive digital landscape, your website is more than just an online presence – it’s the foundation of your brand’s identity, credibility, and success. A premium, high-quality, world-class website is not merely a luxury; it is a necessity for businesses aiming to establish authority, attract discerning customers, and maximize conversions."
 image: "/images/2.jpg"
-date: "2025-01-08T17:16:13.122Z"
+date: "2025-01-08T00:00:00"
 ---
 
 
@@ -53,7 +53,7 @@ Investing in a premium website may require a higher upfront cost, but the return
 
 ## How We Deliver World-Class Websites
 
-At [Your Company Name], we specialize in designing and developing premium websites that deliver results. Here’s how we do it:
+At Verzes, we specialize in designing and developing premium websites that deliver results. Here’s how we do it:
 
 1. **Strategic Discovery:**
    We start by understanding your business goals, target audience, and unique value propositions.

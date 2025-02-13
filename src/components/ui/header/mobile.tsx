@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Nav from "./nav";
-import { MenuIcon, CloseIcon, SearchIcon } from "@/components/ui/icons";
+import { MenuIcon, CloseIcon, Contact } from "@/components/ui/icons";
 import Logo from "@/components/ui/logo";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -34,8 +34,8 @@ export default function MobileMenu() {
 
         <Logo />
 
-        <Link href="/properties">
-          <SearchIcon className="size-5  " stroke="white" />
+        <Link href="/contact">
+          <Contact className="size-5  " stroke="white" />
         </Link>
       </div>
 

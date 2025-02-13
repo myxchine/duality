@@ -16,18 +16,13 @@ const geistMono = Geist_Mono({
 });
 
 const accent = localFont({
-  src: "./fonts/chicago.ttf",
+  src: "./fonts/custom.woff",
   variable: "--font-accent",
   weight: "100 900",
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Premium Web Designer & Developer | Michael Dos Santos",
-    template: " | Premium Web Designer & Developer | Michael Dos Santos",
-  },
-  description:
-    "I architect optimised websites and user experiences resulting in world class lead generation and conversion.",
+  title: "Michael Dos Santos",
   icons: {
     icon: "/favicon.ico",
   },
@@ -37,7 +32,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: "#000",
+  themeColor: "#fff",
 };
 
 export default function RootLayout({
@@ -50,11 +45,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${accent.variable} antialiased`}
       >
-        <main>
-          <Header />
-          {children}
-          <Footer />
-        </main>
+        <main>{children}</main>
       </body>
     </html>
   );

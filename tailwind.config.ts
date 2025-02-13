@@ -15,9 +15,8 @@ export default {
       },
       colors: {
         background: "#fff",
-        secondary: "#000",
-        foreground: "#fff",
-        accent: "#000",
+        foreground: "#000",
+        accent: "#fff",
       },
     },
   },

@@ -19,7 +19,7 @@ export default function Articles({
       {articles.map((article) => (
         <Link
           href={`/articles/${article.slug}`}
-          className=" hover:scale-105 transition-transform flex flex-col gap-4 relative rounded-2xl overflow-hidden bg-accent text-background"
+          className="rounded-2xl hover:scale-105 transition-transform flex overflow-hidden flex-col md:flex-row gap-4 md:gap-8 items-center justify-center relative w-full  bg-background"
           key={article.slug}
         >
           <Image
@@ -30,11 +30,11 @@ export default function Articles({
             className=" w-full object-cover aspect-[4/5] md:aspect-[13/9] mb-[70px] md:mb-[90px]"
           />
 
-          <div className="z-10 w-full flex flex-col gap-2 md:gap-4 absolute bottom-0 left-0 p-3 md:p-5">
+          <div className="flex flex-col gap-2 z-10 absolute bottom-0 left-0 w-full p-2 md:p-4 bottomupgradient2 text-foreground">
             {h3 ? (
-              <h3 className="line-clamp-2">{article.title}</h3>
+              <h3 className="line-clamp-2 ">{article.title}</h3>
             ) : (
-              <h2 className="line-clamp-2">{article.title}</h2>
+              <h2 className="line-clamp-2 text-lg md:text-2xl">{article.title}</h2>
             )}
             <p
               className={

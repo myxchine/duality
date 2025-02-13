@@ -33,7 +33,7 @@ export default async function Footer() {
               <Link
                 href={item.href}
                 key={index}
-                className={` hover:underline text-foreground/60 font-regular text-xs`}
+                className={` hover:underline text-foreground/60 font-regular `}
               >
                 {item.label}
               </Link>
@@ -45,7 +45,7 @@ export default async function Footer() {
               <Link
                 href={item.href}
                 key={index}
-                className={` hover:underline text-foreground/60 font-regular text-xs`}
+                className={` hover:underline text-foreground/60 font-regular `}
               >
                 {item.label}
               </Link>
@@ -57,7 +57,7 @@ export default async function Footer() {
               <Link
                 href={item.href}
                 key={index}
-                className={` hover:underline text-foreground/60 font-regular text-xs`}
+                className={` hover:underline text-foreground/60 font-regular `}
               >
                 {item.label}
               </Link>
@@ -66,12 +66,12 @@ export default async function Footer() {
 
           <div className=" flex-col items-start gap-4 w-fit md:gap-6 max-w-[320px] hidden">
             <p className=" font-custom font-semibold text-base">Information</p>
-            <p className="text-foreground/60  text-xs">Niks</p>
+            <p className="text-foreground/60  ">Niks</p>
           </div>
         </section>
 
-        <p className="flex flex-col items-center text-center gap-4 text-[10px] md:text-xs w-full mt-4 md:mt-8 ">
-          &copy; 2025 - Michael Dos Santos - All Rights Reserved
+        <p className="flex flex-col items-center text-center gap-4 text-sm w-full mt-4 md:mt-8 ">
+          &copy; 2025 - Verzes - All Rights Reserved
         </p>
       </Row>
     </footer>

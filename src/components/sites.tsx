@@ -19,7 +19,7 @@ export default function Sites({
       {sites.map((site) => (
         <Link
           href={`/sites/${site.slug}`}
-          className="  hover:scale-105 transition-transform flex flex-col gap-4 relative rounded-2xl  bg-accent text-background"
+          className="rounded-2xl hover:scale-105 transition-transform mb-0 md:mb-6 flex overflow-hidden flex-col md:flex-row gap-4 md:gap-8 items-center justify-center relative w-full  bg-background"
           key={site.slug}
         >
           <Image
@@ -30,17 +30,17 @@ export default function Sites({
             className="rounded-2xl w-full object-cover aspect-[11/9] md:aspect-[11/9] object-top "
           />
 
-          <div className=" z-10 w-full flex flex-col gap-2 md:gap-4 absolute bottom-0 left-0 p-4 md:p-6">
+          <div className="flex flex-col gap-2 z-10 absolute bottom-0 left-0 w-full p-2  bottomupgradient2 text-foreground">
             {h3 ? (
-              <h3 className="line-clamp-2 z-[10000] ">{site.title} </h3>
+              <h3 className="line-clamp-2 ">{site.title} </h3>
             ) : (
-              <h2 className="line-clamp-2 z-[10000] ">{site.title}</h2>
+              <h2 className="line-clamp-2 text-lg md:text-2xl">{site.title}</h2>
             )}
             <p
               className={
                 lineclamp
                   ? "line-clamp-2 normal-case z-10 "
-                  : "normal-case line-clamp-4 z-10 "
+                  : "normal-case line-clamp-2 z-10 "
               }
             >
               {site.excerpt}

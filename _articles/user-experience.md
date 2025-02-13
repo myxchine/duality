@@ -1,8 +1,8 @@
 ---
-title: "What is User Experience"
+title: "What is User Experience & why is it important?"
 excerpt: "When designing a world-class website, the user experience (UX) is a key factor to understand and implement not just well but better than any other website. User experience encompasses every interaction a user has with a product, system, or service, and in the context of websites, it is the defining factor that determines whether visitors stay, engage, and ultimately convert into customers."
 image: "/images/1.jpg"
-date: "2025-01-08T17:16:13.122Z"
+date: "2025-01-08T00:00:00"
 ---
 
 ## Understanding User Experience
