@@ -69,5 +69,11 @@ export async function generateMetadata({
 }
 
 export function generateStaticParams() {
-  return getAllPostSlugs().map((slug) => ({ slug }));
+  const slugs = getAllPostSlugs().map((slug) => ({ slug }));
+
+  if (slugs.length === 0) {
+    return [];
+  }
+
+  return slugs;
 }
