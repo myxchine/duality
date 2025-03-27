@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --site-width: 80rem;
+  --grey: #f7f7f7;
+}
+
+/* #eeeeee */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-grey: var(--grey);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-accent: var(--font-accent);
+  --font-logo: var(--font-logo);
+}
+
+body {
+  @apply bg-grey text-foreground font-sans text-balance;
+}
+
+p {
+  @apply text-inherit font-sans font-light;
+}
+
+strong {
+  @apply font-medium;
+}
+
+h1 {
+  @apply text-3xl md:text-6xl font-medium tracking-tight font-accent;
+}
+
+h2 {
+  @apply text-2xl md:text-3xl font-medium tracking-tight font-accent;
+}
+
+h3 {
+  @apply text-xl md:text-2xl font-medium tracking-tight font-accent;
+}
+
+.primary-button {
+  @apply bg-foreground text-background px-6 md:px-8  py-2 md:py-2  rounded-full hover:bg-foreground/80  text-lg md:text-xl font-accent font-normal tracking-wider;
+}
+
+.left-to-right-gradient {
+  background: linear-gradient(
+    to right,
+    #f7f7f7 0%,
+    #ffffff00 20%,
+    #ffffff00 80%,
+    #f7f7f7 100%
+  );
+}
+
+/* TODO: Redo these from old side */
+
+.button-1 {
+  @apply bg-foreground w-fit  text-background px-6 md:px-8  py-2 md:py-2  rounded-full hover:bg-foreground/80  text-sm md:text-lg;
+}
+
+.button-2 {
+  @apply bg-foreground/10 w-fit  text-foreground px-6 md:px-8  py-2 md:py-2  rounded-full hover:bg-foreground/20  text-sm md:text-lg;
+}
+.button-3 {
+  @apply bg-white w-fit  text-foreground px-6 md:px-8  py-2 md:py-2  rounded-full hover:bg-foreground/20  text-sm md:text-lg;
+}
+
+.userexperiencelist {
+  @apply text-left flex  flex-wrap lg:flex-row lg:flex-nowrap gap-10 md:gap-8 w-full items-center justify-center;
+}
+
+.userexperiencelist li {
+  @apply w-full  max-w-[300px] md:max-w-[340px] p-6 md:p-8 rounded-xl bg-foreground  shadow-lg flex flex-col  gap-4 text-center;
+}
+
+.userexperiencelist strong {
+  @apply text-black;
+}

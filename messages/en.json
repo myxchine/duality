@@ -1,0 +1,16 @@
+{
+  "Metadata": {
+    "title": "Your Website Title",
+    "description": "Your Website Description"
+  },
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page"
+  },
+  "Posts": {
+    "read": "Read"
+  },
+  "SuggestedPosts": {
+    "title": "Suggested Posts"
+  }
+}
