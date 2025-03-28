@@ -44,7 +44,7 @@ function CTA() {
         href="/contact"
         className="text-xs px-3 py-1 w-fit rounded-full bg-transparent border hover:bg-foreground hover:text-background"
       >
-        Contact
+        Start
       </Link>
     </div>
   );

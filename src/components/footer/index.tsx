@@ -13,7 +13,7 @@ export default async function Footer() {
       <Row>
         <Block padding small>
           <h2 className="max-w-xl">
-            Website Design & Development for Businesses in Lisbon
+            Premium Website Design & Development in Lisbon
           </h2>
 
           <p className="max-w-xl">

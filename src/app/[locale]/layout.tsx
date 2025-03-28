@@ -44,7 +44,11 @@ export async function generateMetadata({
   }
   const t = await getTranslations({ locale, namespace: "Metadata" });
   return {
-    title: "Professional Websites for Businesses in Lisbon",
+    title: {
+      default:
+        "Professional Websites for Businesses in Lisbon | Michael Santos Web Solutions",
+      template: "%s | Michael Santos Web Solutions",
+    },
     description:
       "Website design & development - Use the agency that has driven real business growth for the last 5+ years.",
     icons: {
