@@ -16,7 +16,7 @@ function LogoSVG() {
       data-name="Layer 2"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 234.75 69.3"
-      className="h-[45px] pr-5 md:h-[70px] w-auto"
+      className="h-[45px] pr-5 pt-1 md:h-[60px] w-auto"
     >
       <g id="Layer_1-2" data-name="Layer 1">
         <g>
