@@ -75,6 +75,7 @@ export default function MarqueePartners({
               alt={partner.name}
               width={200}
               height={50}
+              priority
               className="w-auto h-full object-contain saturate-0 brightness-80"
             />
           </a>
