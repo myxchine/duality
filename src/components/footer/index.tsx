@@ -22,8 +22,10 @@ export default async function Footer() {
             you.
           </p>
 
-          <Link href="/contact" className="button-1 mt-2">
-            Contact us {"->"}
+          <Link href="/contact" className="primary-button w-fit mt-2">
+            Contact us      <span className="font-sans font-bold text-base tracking-normal">
+              {"->"}
+            </span>
           </Link>
         </Block>
         <section className="flex flex-wrap justify-start  md:my-6 w-full gap-8 md:gap-24 ">
@@ -35,7 +37,7 @@ export default async function Footer() {
               <Link
                 href={item.href}
                 key={index}
-                className={` hover:underline text-foreground/60 font-light `}
+                className={` hover:text-foreground text-foreground/60 font-light `}
               >
                 {item.label}
               </Link>
@@ -46,22 +48,28 @@ export default async function Footer() {
             <p className="    text-base text-foreground !font-accent !font-medium">
               Information
             </p>
-            <p className="hover:underline text-foreground/60 font-light  ">
+            <p className=" !text-foreground/60 !font-light  ">
               R. de Dona Estefânia 195, Lisbon, Portugal
             </p>
-            <p className="hover:underline text-foreground/60 font-light  ">
+            <p className=" !text-foreground/60 !font-light  ">
               Founder: Michael Dos Santos
             </p>
-            <p className="hover:underline text-foreground/60 font-light  ">
+            <a
+              href="mailto:michael@vesqa.com"
+              className="hover:text-black text-foreground/60 !font-light  "
+            >
               Email: michael@vesqa.com
-            </p>
-            <p className="hover:underline text-foreground/60 font-light  ">
+            </a>
+            <a
+              href="tel:+351 964 691 830"
+              className="hover:text-black text-foreground/60 !font-light  "
+            >
               Phone: +351 964 691 830
-            </p>
+            </a>
           </div>
         </section>
 
-        <p className="flex flex-col items-center text-center gap-4 text-sm w-full mt-8 md:mt-8 text-foreground ">
+        <p className="flex flex-col items-center text-center gap-4 text-sm w-full mt-8 md:mt-8 text-foreground/60 ">
           &copy; 2025 Michael Santos Web Solutions.
         </p>
       </Row>

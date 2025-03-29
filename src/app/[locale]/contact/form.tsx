@@ -42,7 +42,7 @@ export default function Form() {
 
       <button
         type="submit"
-        className={`bg-foreground  text-background flex flex-col justify-center items-center  border border-foreground rounded-full  hover:bg-foreground/80 p-2 px-4 text-center h-12 px-4 w-full ${
+        className={`bg-foreground  text-background flex flex-col justify-center items-center  border border-foreground rounded-full  hover:bg-foreground/80 p-2 px-4 text-center h-12  w-full ${
           isPending || formData.verifyemail !== formData.email
             ? "opacity-50 cursor-not-allowed"
             : ""

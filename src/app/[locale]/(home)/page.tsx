@@ -1,9 +1,5 @@
-import { PostList } from "@/components/posts/list";
 import { Block, Row, Section } from "@/components/ui";
-import { getAllPosts } from "@/server/posts/utils";
-import { getTranslations } from "next-intl/server";
 import Link from "next/link";
-import Image from "next/image";
 import { Faqs } from "@/components/faqs";
 import System from "./system";
 import Hero from "./hero";
@@ -11,9 +7,6 @@ import Founder from "./founder";
 import Testimonial from "@/components/testimonial";
 
 export default async function HomePage() {
-  const t = await getTranslations("HomePage");
-  const posts = await getAllPosts();
-
   return (
     <>
       <Section full grey>
@@ -21,9 +14,40 @@ export default async function HomePage() {
           <Hero />
         </Row>
       </Section>
+      <Section>
+        <Row padding centered>
+          <Block small centered>
+            <h2>Money back guarantee</h2>
+            <p>
+              Not happy with your website? We will refund your initial deposit
+              no questions asked and no hidden fees.
+            </p>
+          </Block>
+          <Block small centered>
+            <h2>All inclusive process from draft to live</h2>
+            <p>
+              After years perfecting the art of pin-pointing the best way to get
+              the most out of web design and development we have a simple yet
+              effective process that will take you from inception to a final
+              product you are proud of.
+            </p>
+          </Block>
+        </Row>
+      </Section>
     </>
   );
 }
+
+/*
+    <Block small>
+            <h2>An offer so good you can't say no...</h2>
+            <p>
+              Take a look at our offers and find which one is the best fit for
+              you. We'll guide you through the process and help you make the
+              right decision.
+            </p>
+          </Block>
+          */
 
 function Old() {
   return (

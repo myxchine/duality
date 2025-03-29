@@ -16,7 +16,7 @@ export default function Hero() {
         <div className="flex flex-row md:flex-row gap-3 md:gap-4 mt-2 w-fit">
           <Link href="/contact" className="primary-button">
             Start Today{" "}
-            <span className="font-sans font-normal text-base tracking-normal">
+            <span className="font-sans font-bold text-base tracking-normal">
               {"->"}
             </span>
           </Link>
