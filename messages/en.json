@@ -1,11 +1,29 @@
 {
+  "Header": {
+    "CTA": "Start"
+  },
   "Metadata": {
-    "title": "Your Website Title",
-    "description": "Your Website Description"
+    "defaultTitle": "Result Driven Websites for Businesses in Lisbon | Michael Santos Web Solutions",
+    "titleTemplate": "%s | Michael Santos Web Solutions",
+    "description": "Website design & development - Use the agency that has driven real business growth for the last 5+ years."
   },
   "HomePage": {
-    "title": "Hello world!",
-    "about": "Go to the about page"
+    "hero": {
+      "title": "Result Driven Websites for Businesses in Lisbon",
+      "description": "Use the agency that has driven real business growth for the last 5+ years.",
+      "CTA": "Start Today",
+      "TrustedBy": "Trusted By"
+    },
+    "features": {
+      "guarantee": {
+        "title": "Money back guarantee",
+        "description": "Not happy with your website? We will refund your initial deposit no questions asked and no hidden fees."
+      },
+      "process": {
+        "title": "A proven step-by-step process",
+        "description": "We've spent years perfecting a simple yet effective process that takes businesses from an initial idea to a functional and responsive website ready to convert customers."
+      }
+    }
   },
   "Posts": {
     "read": "Read"

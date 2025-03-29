@@ -1,0 +1,34 @@
+{
+  "Header": {
+    "CTA": "Comece"
+  },
+  "Metadata": {
+    "defaultTitle": "Websites Orientados para Resultados para Empresas em Lisboa | Michael Santos Web Solutions",
+    "titleTemplate": "%s | Michael Santos Web Solutions",
+    "description": "Design e desenvolvimento de websites - Use a agência que tem impulsionado o crescimento real de negócios nos últimos 5+ anos."
+  },
+  "HomePage": {
+    "hero": {
+      "title": "Websites Orientados para Resultados para Empresas em Lisboa",
+      "description": "Use a agência que tem impulsionado o crescimento real de negócios nos últimos 5+ anos.",
+      "CTA": "Comece Hoje",
+      "TrustedBy": "Com a Confiança de"
+    },
+    "features": {
+      "guarantee": {
+        "title": "Garantia de reembolso",
+        "description": "Não está satisfeito com o seu website? Reembolsamos o seu depósito inicial sem perguntas e sem taxas ocultas."
+      },
+      "process": {
+        "title": "Um processo passo-a-passo comprovado",
+        "description": "Passámos anos a aperfeiçoar um processo simples mas eficaz que leva as empresas desde a ideia inicial até um website funcional e responsivo, pronto para converter clientes."
+      }
+    }
+  },
+  "Posts": {
+    "read": "Ler"
+  },
+  "SuggestedPosts": {
+    "title": "Publicações Sugeridas"
+  }
+}

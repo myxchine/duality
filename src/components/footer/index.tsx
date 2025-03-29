@@ -9,7 +9,7 @@ export const dynamic = "force-static";
 
 export default async function Footer() {
   return (
-    <footer id="site-footer" className="bg-secondary border-t border-black/5">
+    <footer id="site-footer" className="bg-secondary">
       <Row>
         <Block padding small>
           <h2 className="max-w-xl">

@@ -1,6 +1,6 @@
 "use client";
 import { mainMenu } from "@/siteConfig";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { usePathname } from "next/navigation";
 export default function Nav({ className }: { className?: string }) {
   const pathname = usePathname();

@@ -1,21 +1,20 @@
 import { Block } from "@/components/ui";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import PartnersMarquee from "./marquee";
+import { getTranslations } from "next-intl/server";
 
-export default function Hero() {
+export default async function Hero() {
+  const t = await getTranslations("HomePage.hero");
   return (
-    <div className="flex flex-col items-center justify-center gap-10 md:gap-14">
+    <div className="flex flex-col items-center justify-center gap-12 md:gap-14">
       <Block centered>
-        <h1 className="max-w-2xl mx-auto">
-          Professional Websites for Businesses in Lisbon
-        </h1>
+        <h1 className="max-w-2xl mx-auto">{t("title")}</h1>
         <p className="text-base md:text-xl max-w-[430px]  text-inherit ">
-          Use the agency that has driven real business growth for the last{" "}
-          <strong>5+ years.</strong>
+          {t("description")}
         </p>
         <div className="flex flex-row md:flex-row gap-3 md:gap-4 mt-2 w-fit">
           <Link href="/contact" className="primary-button">
-            Start Today{" "}
+            {t("CTA")}{" "}
             <span className="font-sans font-bold text-base tracking-normal">
               {"->"}
             </span>
@@ -24,7 +23,7 @@ export default function Hero() {
       </Block>
       <Block>
         <p className="!font-medium !font-accent !text-black/40 w-full text-center md:pb-4 text-lg md:text-3xl">
-          Trusted By
+          {t("TrustedBy")}
         </p>
         <PartnersMarquee
           partners={[

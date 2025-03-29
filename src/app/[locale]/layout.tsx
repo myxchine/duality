@@ -45,12 +45,10 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "Metadata" });
   return {
     title: {
-      default:
-        "Professional Websites for Businesses in Lisbon | Michael Santos Web Solutions",
-      template: "%s | Michael Santos Web Solutions",
+      default: t("defaultTitle"),
+      template: t("titleTemplate"),
     },
-    description:
-      "Website design & development - Use the agency that has driven real business growth for the last 5+ years.",
+    description: t("description"),
     icons: {
       icon: "/favicon.ico",
     },

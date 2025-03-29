@@ -5,8 +5,10 @@ import System from "./system";
 import Hero from "./hero";
 import Founder from "./founder";
 import Testimonial from "@/components/testimonial";
+import { getTranslations } from "next-intl/server";
 
 export default async function HomePage() {
+  const t = await getTranslations("HomePage");
   return (
     <>
       <Section full grey>
@@ -17,20 +19,12 @@ export default async function HomePage() {
       <Section>
         <Row padding centered>
           <Block small centered>
-            <h2>Money back guarantee</h2>
-            <p>
-              Not happy with your website? We will refund your initial deposit
-              no questions asked and no hidden fees.
-            </p>
+            <h2>{t("features.guarantee.title")}</h2>
+            <p>{t("features.guarantee.description")}</p>
           </Block>
           <Block small centered>
-            <h2>All inclusive process from draft to live</h2>
-            <p>
-              After years perfecting the art of pin-pointing the best way to get
-              the most out of web design and development we have a simple yet
-              effective process that will take you from inception to a final
-              product you are proud of.
-            </p>
+            <h2>{t("features.process.title")}</h2>
+            <p>{t("features.process.description")}</p>
           </Block>
         </Row>
       </Section>

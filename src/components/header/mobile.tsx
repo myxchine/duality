@@ -6,6 +6,7 @@ import Logo from "@/components/logo";
 import { usePathname } from "next/navigation";
 import Nav from "./nav";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,13 +39,14 @@ export default function MobileMenu() {
 }
 
 function CTA() {
+  const t = useTranslations("Header");
   return (
     <div className="w-1/5 flex justify-end">
       <Link
         href="/contact"
         className="text-xs px-3 py-1 w-fit rounded-full bg-transparent border hover:bg-foreground hover:text-background"
       >
-        Start
+        {t("CTA")}
       </Link>
     </div>
   );
