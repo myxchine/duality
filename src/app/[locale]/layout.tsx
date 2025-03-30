@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/app/globals.css";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
@@ -42,6 +42,7 @@ export async function generateMetadata({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "Metadata" });
   return {
     title: {
@@ -55,6 +56,12 @@ export async function generateMetadata({
   };
 }
 
+export const viewport: Viewport = {
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+  themeColor: "#FFFFFF",
+};
 export default async function LocaleLayout({
   children,
   params,

@@ -1,6 +1,6 @@
 {
   "Header": {
-    "CTA": "Start"
+    "CTA": "Book"
   },
   "Metadata": {
     "defaultTitle": "Result Driven Websites for Businesses in Lisbon | Michael Santos Web Solutions",
@@ -11,17 +11,17 @@
     "hero": {
       "title": "Result Driven Websites for Businesses in Lisbon",
       "description": "Use the agency that has driven real business growth for the last 5+ years.",
-      "CTA": "Start Today",
+      "CTA": "Discuss your project",
       "TrustedBy": "Trusted By"
     },
     "features": {
       "guarantee": {
         "title": "Money back guarantee",
-        "description": "Not happy with your website? We will refund your initial deposit no questions asked and no hidden fees."
+        "description": "Not fully satisfied with your website? Recieve a refund of your initial deposit no questions asked + no hidden fees. It's an offer so good you can't say no."
       },
       "process": {
-        "title": "A proven step-by-step process",
-        "description": "We've spent years perfecting a simple yet effective process that takes businesses from an initial idea to a functional and responsive website ready to convert customers."
+        "title": "Why us?",
+        "description": "After years of working with businesses we now use a proven process, the Ascent Framework, to achieve a refined website that accurately represents your business in Lisbon and provide a frictionless flow for qualified prospects to efficiently learn who you are, why your offer solves their problem and making it dead easy to get in contact with you or purchase online."
       }
     }
   },

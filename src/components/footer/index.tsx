@@ -17,13 +17,15 @@ export default async function Footer() {
           </h2>
 
           <p className="max-w-xl">
-            Empowering businesses to scale from organic growth and
-            results-focused web solutions optimised for your customers to find
-            you.
+            Empowering businesses for 5+ years to scale through result-focused
+            web design & development optimised for your customers to find you
+            whilst providing a compelling user experience tailored to your
+            business' offer and brand.
           </p>
 
           <Link href="/contact" className="primary-button w-fit mt-2">
-            Contact us      <span className="font-sans font-bold text-base tracking-normal">
+            Contact us{" "}
+            <span className="font-sans font-bold text-base tracking-normal">
               {"->"}
             </span>
           </Link>
@@ -37,7 +39,7 @@ export default async function Footer() {
               <Link
                 href={item.href}
                 key={index}
-                className={` hover:text-foreground text-foreground/60 font-light `}
+                className={` hover:text-foreground text-foreground/60 font-light text-lg md:text-xl`}
               >
                 {item.label}
               </Link>
@@ -55,21 +57,21 @@ export default async function Footer() {
               Founder: Michael Dos Santos
             </p>
             <a
-              href="mailto:michael@vesqa.com"
-              className="hover:text-black text-foreground/60 !font-light  "
+              href="mailto:michael@michaelsantos.pt"
+              className="hover:text-black text-foreground/60 !font-light text-lg md:text-xl "
             >
-              Email: michael@vesqa.com
+              Email: michael@michaelsantos.pt
             </a>
             <a
               href="tel:+351 964 691 830"
-              className="hover:text-black text-foreground/60 !font-light  "
+              className="hover:text-black text-foreground/60 !font-light text-lg md:text-xl "
             >
               Phone: +351 964 691 830
             </a>
           </div>
         </section>
 
-        <p className="flex flex-col items-center text-center gap-4 text-sm w-full mt-8 md:mt-8 text-foreground/60 ">
+        <p className="flex flex-col items-center text-center gap-4 !text-sm w-full mt-8 md:mt-8 text-foreground/60 ">
           &copy; 2025 Michael Santos Web Solutions.
         </p>
       </Row>
