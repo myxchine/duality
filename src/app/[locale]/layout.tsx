@@ -10,7 +10,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import localFont from "next/font/local";
 import { Toaster } from "sonner";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

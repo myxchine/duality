@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getPostBySlug, getAllPostSlugs } from "@/server/posts/utils";
 import markdownToHtml from "@/server/posts/helpers";
 import Image from "next/image";
-import { Row, Section } from "@/components/ui";
+import { Block, Row, Section } from "@/components/ui";
 import SuggestedPosts from "@/components/posts/suggested";
 
 export default async function PostPage({
@@ -18,11 +18,14 @@ export default async function PostPage({
   }
   const content = await markdownToHtml(post.content);
   return (
-    <>
-      <Section>
-        <Row>
+    <Section>
+      <Row>
+        <Block>
           <h1>{post.title}</h1>
           <p>{post.excerpt}</p>
+        </Block>
+
+        {post.image && (
           <Image
             src={post.image}
             alt={post.title}
@@ -31,18 +34,15 @@ export default async function PostPage({
             priority={true}
             className="w-full h-auto aspect-[4/3] md:aspect-[21/9] object-cover my-4 max-w-4xl rounded-xl"
           />
-        </Row>
-        <Row>
-          <div
-            className="flex flex-col gap-8 article-content"
-            dangerouslySetInnerHTML={{ __html: content }}
-          />
-        </Row>
-      </Section>
-      <Section>
-        <SuggestedPosts currentPost={post} />
-      </Section>
-    </>
+        )}
+      </Row>
+      <Row>
+        <div
+          className="flex flex-col gap-8 article-content"
+          dangerouslySetInnerHTML={{ __html: content }}
+        />
+      </Row>
+    </Section>
   );
 }
 
@@ -63,7 +63,7 @@ export async function generateMetadata({
     description: description,
     openGraph: {
       title,
-      images: [post.image],
+      images: post.image ? [{ url: post.image }] : undefined,
     },
   };
 }

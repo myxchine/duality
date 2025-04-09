@@ -1,9 +1,6 @@
 import Link from "next/link";
 import { Row, Block } from "@/components/ui";
-const navItems = [
-  { label: "Home", href: "/" },
-  { label: "Contact", href: "/contact" },
-];
+import { footerMenu } from "@/siteConfig";
 
 export const dynamic = "force-static";
 
@@ -11,31 +8,12 @@ export default async function Footer() {
   return (
     <footer id="site-footer" className="bg-secondary">
       <Row>
-        <Block padding small>
-          <h2 className="max-w-xl">
-            Premium Website Design & Development in Lisbon
-          </h2>
-
-          <p className="max-w-xl">
-            Empowering businesses for 5+ years to scale through result-focused
-            web design & development optimised for your customers to find you
-            whilst providing a compelling user experience tailored to your
-            business' offer and brand.
-          </p>
-
-          <Link href="/contact" className="primary-button w-fit mt-2">
-            Contact us{" "}
-            <span className="font-sans font-bold text-base tracking-normal">
-              {"->"}
-            </span>
-          </Link>
-        </Block>
         <section className="flex flex-wrap justify-start  md:my-6 w-full gap-8 md:gap-24 ">
           <nav className="flex flex-col items-start gap-4  w-fit md:gap-6 max-w-[320px]">
             <p className="   text-base text-foreground !font-accent !font-medium">
               Menu
             </p>
-            {navItems.map((item, index) => (
+            {footerMenu.map((item, index) => (
               <Link
                 href={item.href}
                 key={index}
@@ -76,5 +54,29 @@ export default async function Footer() {
         </p>
       </Row>
     </footer>
+  );
+}
+
+function Extra() {
+  return (
+    <Block padding small>
+      <h2 className="max-w-xl">
+        Premium Website Design & Development in Lisbon
+      </h2>
+
+      <p className="max-w-xl">
+        Empowering businesses for 5+ years to scale through result-focused web
+        design & development optimised for your customers to find you whilst
+        providing a compelling user experience tailored to your business' offer
+        and brand.
+      </p>
+
+      <Link href="/contact" className="primary-button w-fit mt-2">
+        Contact us{" "}
+        <span className="font-sans font-bold text-base tracking-normal">
+          {"->"}
+        </span>
+      </Link>
+    </Block>
   );
 }

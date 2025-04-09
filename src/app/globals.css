@@ -47,6 +47,10 @@ h3 {
   @apply bg-foreground text-background px-6 md:px-8  tracking-wide py-2 md:py-2  rounded-full hover:bg-foreground/80  text-lg md:text-xl font-accent font-medium;
 }
 
+.article-content a {
+  @apply !mb-12 bg-foreground text-background px-6 md:px-8  tracking-wide py-2 md:py-2  rounded-full hover:bg-foreground/80  text-lg md:text-xl font-accent font-medium;
+}
+
 .secondary-button {
   @apply bg-background text-foreground border-2 px-6 md:px-8  tracking-wide py-2 md:py-2  rounded-full hover:bg-foreground hover:text-background md:text-lg font-accent font-medium;
 }

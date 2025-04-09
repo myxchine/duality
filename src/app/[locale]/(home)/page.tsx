@@ -82,6 +82,18 @@ export default async function HomePage() {
           </div>
         </Row>
 
+        <Row>
+          <Block centered small>
+            <h2>Techinal Features</h2>
+            <p>
+              We have spent years optimising online experiences and developing
+              the skills to implement the most important features especially for
+              businesses trying to grow online.
+            </p>
+          </Block>
+          <Features />
+        </Row>
+
         <Row padding>
           <AscentFramework />
           <Block centered small>
@@ -100,6 +112,7 @@ export default async function HomePage() {
 }
 
 import PartnersMarquee from "./marquee";
+import { Features } from "./features";
 
 async function Hero() {
   const t = await getTranslations("HomePage.hero");
