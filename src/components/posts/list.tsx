@@ -11,13 +11,16 @@ export async function PostList({ posts, h3 }: { posts: Post[]; h3?: boolean }) {
           className="flex flex-col gap-4"
           key={post.slug}
         >
-          <Image
-            src={post.image}
-            alt={post.title}
-            width={500}
-            height={300}
-            className=" w-full object-cover aspect-[16/9] my-4 rounded"
-          />
+          {post.image && (
+            <Image
+              src={post.image}
+              alt={post.title}
+              width={500}
+              height={300}
+              className=" w-full object-cover aspect-[16/9] my-4 rounded"
+            />
+          )}
+
           {h3 ? (
             <h3 className="line-clamp-2">{post.title}</h3>
           ) : (
